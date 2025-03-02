@@ -1,33 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">         
-    
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/assets.css">
     <link rel="stylesheet" href="./bootscss/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="img/logo_blanco.png">
     <title>Galería de arte</title>
-</head>
-<body>
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-            <img src="img/logo_blanco.png" alt="logo_blanco" class="mx-auto d-block" width="300px" height="150px">
+    <style>
+        .navbar {
+            position: fixed !important;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1050;
+        }
 
-            <div class="d-flex">
+        body {
+            padding-top: 120px;
+            background-color: whitesmoke;
+        }
+
+        @media (max-width: 767px) {
+            body {
+                padding-top: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-ligth">
+        <div class="container-fluid">
+            <img src="img/logo.png" alt="logo_blanco"  width="130px" height="70px">
+
+            <div class="d-flex bg-dark" >
                 <button class="btn-imagen navbar-dark bg-dark">
                     <img src="img/modo_noche-dia.png" alt="modo" width="25px" height="25px">
                 </button>
                 <button class="btn-imagen navbar-dark bg-dark">
                     <img src="img/lengua.png" alt="modo" width="25px" height="25px">
                 </button>
-                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
 
-           
 
-            <div class="collapse navbar-collapse" id="navbarNav">
+
+            <div class="collapse navbar-collapse bg-dark" id="navbarNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="#home">Home</a>
@@ -39,7 +62,7 @@
                         <a class="nav-link" href="#stalingrado">Batalla de Stalingrado</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#fusilamiento">Noche 9 de noviembre de 1823</a>
+                        <a class="nav-link" href="#rostrogue">El rostro de la guerra</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#ejrcitor">Ejercito rojo</a>
@@ -50,46 +73,142 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#miliciano">Muerte de un miliciano</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cont">Contactar</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
     <section class="intro" id="home">
-        <h1>Bienvenido</h1>
-        
-            <h2>Esta es nuestra galeria de arte online</h2>
-                
-                <p>Aquí podrás disfrutar de una pequeña seleccion de obras con diferentes temáticas mensuales, este més es:</p>
-                <br>
-                <p class="tematica">LA GUERRA</p>
-                
+        <div class="introduccion">
+            <h1>Bienvenido</h1>
+
+            <h2>En esta galería, se despliegan diversas interpretaciones del conflicto humano a través del arte.</h2>
+
+            <h3>Aquí podrás disfrutar de una pequeña seleccion de obras con diferentes temáticas mensuales, este més es:
+            </h3>
+            <br>
+            <p class="tematica">LA GUERRA</p>
+            <p>Invitamos a reflexionar sobre la devastación que la guerra deja en su paso. Cada obra refleja las
+                cicatrices invisibles de quienes la sufren. Las ruinas no son solo físicas, sino también emocionales,
+                marcando a generaciones. En estas obras, la violencia se muestra no solo en las armas, sino en la
+                pérdida de lo más esencial: la humanidad. Sin embargo, aun en la oscuridad, hay un resplandor de
+                esperanza, un anhelo de paz que persiste más allá del estruendo. La guerra, aunque siempre presente, no
+                puede extinguir el sueño de un mundo más justo y tranquilo.</p>
+        </div>
     </section>
 
     <section class="pintura" id="guer">
-
+        <div class="arte-container">
+            <h1 class="tematica">GUERNICA</h1>
+            <div class="imagenes">
+                <img class="obra" src="img/2025/marzo/guernica.webp" alt="guernica" width="600px" height="450px">
+            </div>
+            <div class="descripcion">
+                <p>Representa el bombardeo de Guernica durante la Guerra Civil Española. Con un estilo cubista y
+                    expresionista, muestra el horror, la muerte y el sufrimiento de civiles inocentes. Se ha convertido
+                    en un símbolo antibélico.</p>
+                <a href="https://es.wikipedia.org/wiki/Guernica_(cuadro)" target="_blank" class="btn1">Saber más</a>
+            </div>
+        </div>
     </section>
+
 
     <section class="escultura" id="stalingrado">
-        
+        <div class="arte-container">
+            <h1 class="tematica">MONUMENTO A LA BATALLA DE STALINGRADO</h1>
+            <div class="imagenes">
+                <img class="obra" src="img/2025/marzo/monumento_batalla_de_stalingrado.webp"
+                    alt="monumento_batalla_de_stalingrado" width="600px" height="450px">
+            </div>
+            <div class="descripcion">
+                <p>Ubicada en Volgogrado (antes Stalingrado, Rusia), es una de las esculturas más grandes del mundo.
+                    Representa a una mujer con una espada en alto, simbolizando la resistencia soviética contra la
+                    invasión nazi.</p>
+                <a href="https://es.wikipedia.org/wiki/Estatua_de_la_Madre_Patria" target="_blank" class="btn2">Saber
+                    más</a>
+            </div>
+        </div>
     </section>
 
-    <section class="pintura" id="fusilamiento">
-
+    <section class="pintura" id="rostrogue">
+        <div class="arte-container">
+            <h1 class="tematica">EL ROSTRO DE LA GUERRA</h1>
+            <div class="imagenes">
+                <img class="obra" src="img/2025/marzo/la_cara-de-la-guerra.webp" alt="la_cara-de-la-guerra"
+                    width="600px" height="450px">
+            </div>
+            <div class="descripcion">
+                <p>Es una pintura realizada por el artista surrealista Salvador Dalí en 1940, durante su período en los
+                    Estados Unidos, tras haber huido de la Segunda Guerra Mundial.</p>
+                <a href="https://en.wikipedia.org/wiki/The_Face_of_War" target="_blank" class="btn1">Saber más</a>
+            </div>
+        </div>
     </section>
 
     <section class="escultura" id="ejrcitor">
-        
+        <div class="arte-container">
+            <h1 class="tematica">MONUMENTO A LOS HÉROES DEL EJÉRCITO ROJO</h1>
+            <div class="imagenes">
+                <img class="obra" src="img/2025/marzo/monumento_heroes_ejercito_rojo.webp"
+                    alt="monumento_heroes_ejercito_rojo" width="600px" height="450px">
+            </div>
+            <div class="descripcion">
+                <p>Se encuentran en varios países de Europa del Este, recordando la victoria soviética en la Segunda
+                    Guerra Mundial. Representan la lucha y sacrificio de los soldados soviéticos.</p>
+                <a href="https://es.wikipedia.org/wiki/Monumento_a_los_H%C3%A9roes_del_Ej%C3%A9rcito_Rojo"
+                    target="_blank" class="btn2">Saber más</a>
+            </div>
+        </div>
     </section>
 
     <section class="pintura" id="masacre">
-
+        <div class="arte-container">
+            <h1 class="tematica">LA MASACRE DE QUÍOS</h1>
+            <div class="imagenes">
+                <img class="obra" src="img/2025/marzo/la_masacre_de_quios.webp" alt="la_masacre_de_quios" width="600px"
+                    height="450px">
+            </div>
+            <div class="descripcion">
+                <p>Representa las atrocidades cometidas por el Imperio Otomano contra los griegos en la isla de Quíos.
+                    La obra enfatiza el sufrimiento de los inocentes en los conflictos bélicos.</p>
+                <a href="https://es.wikipedia.org/wiki/La_matanza_de_Qu%C3%ADos" target="_blank" class="btn1">Saber
+                    más</a>
+            </div>
+        </div>
     </section>
 
     <section class="escultura" id="miliciano">
-        
+        <div class="arte-container">
+            <h1 class="tematica">MUERTE DE UN MILICIANO
+            </h1>
+            <div class="imagenes">
+                <img class="obra" src="img/2025/marzo/muerte_de_un_miliciano.webp" alt="muerte_de_un_miliciano"
+                    width="600px" height="450px">
+            </div>
+            <div class="descripcion">
+                <p>Fotografía icónica tomada durante la Guerra Civil Española, mostrando el instante en que un soldado
+                    cae abatido. Representa la fragilidad de la vida en la guerra y su impacto en los combatientes.</p>
+                <a href="https://es.wikipedia.org/wiki/Muerte_de_un_miliciano" target="_blank" class="btn2">Saber
+                    más</a>
+            </div>
+        </div>
     </section>
+
+    <footer id="cont" class="bg-ligth">
+
+        <div class="derechos">
+            <p class="text-center">
+              &copy; 2025 Kairós. Todos los derechos reservados.
+            </p>
+        </div>
+        
+      
+    </footer>
 
 
     <script src="./bootsjs/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
