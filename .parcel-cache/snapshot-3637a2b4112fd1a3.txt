@@ -1,4 +1,4 @@
-4248
+4250
 58C:\Users\anvvl\Desktop\Clase\galeria-1\node_modules\dotenv133854975512794018 1
 51C:\Users\anvvl\Desktop\Clase\galeria-1\package.json133854976556454192 0
 69C:\Users\anvvl\Desktop\Clase\galeria-1\node_modules\@msgpackr-extract133854975600088381 1
@@ -13,7 +13,7 @@
 49C:\Users\anvvl\Desktop\Clase\galeria-1\.gitignore133855066731659139 0
 88C:\Users\anvvl\Desktop\Clase\galeria-1\node_modules\@swc\helpers\src\_inherits_loose.mjs133854975555450299 0
 98C:\Users\anvvl\Desktop\Clase\galeria-1\node_modules\posthtml\node_modules\domutils\lib\querying.js133854975509867563 0
-43C:\Users\anvvl\Desktop\Clase\galeria-1\dist133855066371922480 1
+43C:\Users\anvvl\Desktop\Clase\galeria-1\dist133855086682221045 1
 61C:\Users\anvvl\Desktop\Clase\galeria-1\node_modules\is-number133854975503541333 1
 93C:\Users\anvvl\Desktop\Clase\galeria-1\node_modules\@swc\helpers\esm\_wrap_async_generator.js133854975552201507 0
 74C:\Users\anvvl\Desktop\Clase\galeria-1\node_modules\ansi-styles\index.d.ts133854975506885698 0
@@ -25,7 +25,7 @@
 79C:\Users\anvvl\Desktop\Clase\galeria-1\node_modules\dom-serializer\package.json133854975510614829 0
 67C:\Users\anvvl\Desktop\Clase\galeria-1\node_modules\posthtml-parser133854975506087118 1
 81C:\Users\anvvl\Desktop\Clase\galeria-1\node_modules\domutils\lib\traversal.js.map133854975541115606 0
-49C:\Users\anvvl\Desktop\Clase\galeria-1\index.html133855063819785984 0
+49C:\Users\anvvl\Desktop\Clase\galeria-1\index.html133855086416304917 0
 51C:\Users\anvvl\Desktop\Clase\galeria-1\node_modules133854975600996083 1
 56C:\Users\anvvl\Desktop\Clase\galeria-1\node_modules\@swc133854975600088381 1
 84C:\Users\anvvl\Desktop\Clase\galeria-1\node_modules\react-error-overlay\package.json133854975510934976 0
@@ -87,7 +87,7 @@
 71C:\Users\anvvl\Desktop\Clase\galeria-1\node_modules\react-error-overlay133854975511571227 1
 102C:\Users\anvvl\Desktop\Clase\galeria-1\node_modules\posthtml\node_modules\domutils\lib\manipulation.js133854975508802583 0
 95C:\Users\anvvl\Desktop\Clase\galeria-1\node_modules\caniuse-lite\data\features\css-scrollbar.js133854975555694727 0
-57C:\Users\anvvl\Desktop\Clase\galeria-1\src\css\assets.css133854974096207190 0
+57C:\Users\anvvl\Desktop\Clase\galeria-1\src\css\assets.css133855086507146541 0
 78C:\Users\anvvl\Desktop\Clase\galeria-1\node_modules\@parcel\optimizer-svgo\lib133854975496047061 1
 69C:\Users\anvvl\Desktop\Clase\galeria-1\node_modules\get-port\index.js133854975497805335 0
 76C:\Users\anvvl\Desktop\Clase\galeria-1\node_modules\htmlnano\lib\helpers.cjs133854975512480220 0
@@ -4238,9 +4238,11 @@
 66C:\Users\anvvl\Desktop\Clase\galeria-1\dist\index.bed4eebd.css.map133855066371905743 0
 62C:\Users\anvvl\Desktop\Clase\galeria-1\dist\index.c62c4b7d.css133855066371797463 0
 66C:\Users\anvvl\Desktop\Clase\galeria-1\dist\index.c62c4b7d.css.map133855066371900145 0
-62C:\Users\anvvl\Desktop\Clase\galeria-1\dist\index.fdac7176.css133855066166965762 0
-66C:\Users\anvvl\Desktop\Clase\galeria-1\dist\index.fdac7176.css.map133855066167796047 0
-54C:\Users\anvvl\Desktop\Clase\galeria-1\dist\index.html133855066371781232 0
+62C:\Users\anvvl\Desktop\Clase\galeria-1\dist\index.de4d7ab5.css133855086682110681 0
+66C:\Users\anvvl\Desktop\Clase\galeria-1\dist\index.de4d7ab5.css.map133855086682221045 0
+62C:\Users\anvvl\Desktop\Clase\galeria-1\dist\index.fdac7176.css133855086594857517 0
+66C:\Users\anvvl\Desktop\Clase\galeria-1\dist\index.fdac7176.css.map133855086595056396 0
+54C:\Users\anvvl\Desktop\Clase\galeria-1\dist\index.html133855086682135747 0
 63C:\Users\anvvl\Desktop\Clase\galeria-1\dist\intro.4feba085.webp133855066166955748 0
 78C:\Users\anvvl\Desktop\Clase\galeria-1\dist\la_cara-de-la-guerra.114999da.webp133855066166895438 0
 72C:\Users\anvvl\Desktop\Clase\galeria-1\dist\modo_noche-dia.5b5b2804.webp133855066370095834 0
