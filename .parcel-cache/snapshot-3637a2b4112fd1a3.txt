@@ -10,7 +10,7 @@
 85C:\Users\anvvl\Desktop\Clase\galeria-1\node_modules\@parcel\runtime-react-refresh\lib133854975496006917 1
 56C:\Users\anvvl\Desktop\Clase\galeria-1\package-lock.json133854975600603222 0
 99C:\Users\anvvl\Desktop\Clase\galeria-1\node_modules\@parcel\transformer-posthtml\lib\loadPlugins.js133854975496506059 0
-49C:\Users\anvvl\Desktop\Clase\galeria-1\.gitignore133854974096077047 0
+49C:\Users\anvvl\Desktop\Clase\galeria-1\.gitignore133854977593847288 0
 88C:\Users\anvvl\Desktop\Clase\galeria-1\node_modules\@swc\helpers\src\_inherits_loose.mjs133854975555450299 0
 98C:\Users\anvvl\Desktop\Clase\galeria-1\node_modules\posthtml\node_modules\domutils\lib\querying.js133854975509867563 0
 43C:\Users\anvvl\Desktop\Clase\galeria-1\dist133854976619201956 1
