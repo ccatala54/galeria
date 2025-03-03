@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/assets.css">
     <link rel="stylesheet" href="./bootscss/bootstrap.min.css">
-    <link rel="icon" type="image/png" href="img/soluna.png">
+    <link rel="icon" type="image/webp" href="img/logo.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Galería de arte</title>
@@ -23,6 +23,19 @@
             background-color: whitesmoke;
         }
 
+        .intro {
+            background-image: url(img/intro.webp);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.6),
+                        -1px 1px 8px rgb(255, 255, 255, 0.6),
+                        1px -1px 8px rgb(255, 255, 255, 0.6),
+                        -1px -1px 8px rgba(255, 255, 255, 0.6);
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+
         @media (max-width: 767px) {
             body {
                 padding-top: 80px;
@@ -34,11 +47,11 @@
 <body>
     <nav class="navbar navbar-dark bg-ligth">
         <div class="container-fluid">
-            <img src="img/logo.png" alt="logo_blanco"  width="130px" height="70px">
+            <img src="img/logo.webp" alt="logo_blanco"  width="130px" height="70px"  loading="lazy">
 
             <div class="d-flex bg-dark" >
                 <button class="btn-imagen navbar-dark bg-dark">
-                    <img src="img/lengua.png" alt="modo" width="25px" height="25px">
+                    <img src="img/lengua.webp" alt="modo" width="25px" height="25px"  loading="lazy">
                 </button>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -99,7 +112,7 @@
         <div class="arte-container">
             <h1 class="tematica">GUERNICA</h1>
             <div class="imagenes">
-                <img class="obra" src="img/2025/marzo/guernica.webp" alt="guernica" width="600px" height="450px">
+                <img class="obra" src="img/2025/marzo/guernica.webp" alt="guernica" width="600px" height="450px"  loading="lazy">
             </div>
             <div class="descripcion">
                 <p>Representa el bombardeo de Guernica durante la Guerra Civil Española. Con un estilo cubista y
@@ -116,7 +129,7 @@
             <h1 class="tematica">MONUMENTO A LA BATALLA DE STALINGRADO</h1>
             <div class="imagenes">
                 <img class="obra" src="img/2025/marzo/monumento_batalla_de_stalingrado.webp"
-                    alt="monumento_batalla_de_stalingrado" width="600px" height="450px">
+                    alt="monumento_batalla_de_stalingrado" width="600px" height="450px"  loading="lazy">
             </div>
             <div class="descripcion">
                 <p>Ubicada en Volgogrado (antes Stalingrado, Rusia), es una de las esculturas más grandes del mundo.
@@ -133,7 +146,7 @@
             <h1 class="tematica">EL ROSTRO DE LA GUERRA</h1>
             <div class="imagenes">
                 <img class="obra" src="img/2025/marzo/la_cara-de-la-guerra.webp" alt="la_cara-de-la-guerra"
-                    width="600px" height="450px">
+                    width="600px" height="450px"  loading="lazy">
             </div>
             <div class="descripcion">
                 <p>Es una pintura realizada por el artista surrealista Salvador Dalí en 1940, durante su período en los
@@ -148,7 +161,7 @@
             <h1 class="tematica">MONUMENTO A LOS HÉROES DEL EJÉRCITO ROJO</h1>
             <div class="imagenes">
                 <img class="obra" src="img/2025/marzo/monumento_heroes_ejercito_rojo.webp"
-                    alt="monumento_heroes_ejercito_rojo" width="600px" height="450px">
+                    alt="monumento_heroes_ejercito_rojo" width="600px" height="450px"  loading="lazy">
             </div>
             <div class="descripcion">
                 <p>Se encuentran en varios países de Europa del Este, recordando la victoria soviética en la Segunda
@@ -164,7 +177,7 @@
             <h1 class="tematica">LA MASACRE DE QUÍOS</h1>
             <div class="imagenes">
                 <img class="obra" src="img/2025/marzo/la_masacre_de_quios.webp" alt="la_masacre_de_quios" width="600px"
-                    height="450px">
+                    height="450px"  loading="lazy">
             </div>
             <div class="descripcion">
                 <p>Representa las atrocidades cometidas por el Imperio Otomano contra los griegos en la isla de Quíos.
@@ -181,7 +194,7 @@
             </h1>
             <div class="imagenes">
                 <img class="obra" src="img/2025/marzo/muerte_de_un_miliciano.webp" alt="muerte_de_un_miliciano"
-                    width="600px" height="450px">
+                    width="600px" height="450px"  loading="lazy">
             </div>
             <div class="descripcion">
                 <p>Fotografía icónica tomada durante la Guerra Civil Española, mostrando el instante en que un soldado
