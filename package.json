@@ -1,0 +1,24 @@
+{
+  "name": "galeria",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccatala54/galeria.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ccatala54/galeria/issues"
+  },
+  "homepage": "https://github.com/ccatala54/galeria#readme",
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
+}
