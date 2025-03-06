@@ -8,7 +8,7 @@ li{
 }
 
 .intro {
-    background-image: url(/img/intro.webp);
+    background-image: url(../../img/intro.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,6 +46,61 @@ p {
     text-align: justify;
 }
 
+.fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.fotos-previsualizar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%; 
+    margin-bottom: 20px;
+}
+
+.fotos-previsualizar p {
+    margin-top: 10px;
+    text-align: center;
+    border-left: 3px solid var(--red);
+    padding-left: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: azure;
+}
+
+.pre-visualizar img {
+    border-radius: 10%;
+    width: 100%; 
+    border: 0.1em solid var(--negro);
+    background-image: linear-gradient(to right, var(--red), var(--negro));
+    padding: 0.2em;
+    box-shadow: 0 0 25px #361515;
+}
+.pre-visualizar h1{
+    color: #361515;
+}
+
+
+.pre-visualizar h1, .arte-container h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Oswald", serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+
+
+.pre-visualizar a img{
+    transition: 1s opacity;
+    margin: 3%;
+    
+}
+
+
 .pintura {
     background-color: #4b4646;
     padding: 5%;
@@ -63,13 +118,7 @@ p {
     text-align: center;
 }
 
-.arte-container h1 {
-    margin-bottom: 20px;
-    text-align: center;
-    font-family: "Oswald", serif;
-    font-weight: 600;
-    font-size: 40px;
-}
+
 
 .imagenes {
     display: flex;
@@ -81,7 +130,6 @@ p {
     width: 100%;
     max-width: 750px;
     height: auto;
-    
     box-shadow: 0 0 25px #e3cdcd;
 }
 
@@ -129,7 +177,7 @@ p {
 }
 
 .escultura .obra {
-    box-shadow: 0 0 25px #4b4646;
+    box-shadow: 0 0 25px #411313;
 }
 
 .btn2:hover {
