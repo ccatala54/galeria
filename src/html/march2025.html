@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/assets.css">
-    <link rel="stylesheet" href="./src/bootscss/bootstrap.min.css">
-    <link rel="icon" type="image/webp" href="./img/modo_noche-dia.webp">
+    <link rel="stylesheet" href="/src/css/assets.css">
+    <link rel="stylesheet" href="/src/bootscss/bootstrap.min.css">
+    <link rel="icon" type="image/webp" href="/img/modo_noche-dia.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Kairós</title>
@@ -41,7 +41,22 @@
 <body>
     <nav class="navbar navbar-dark bg-ligth">
         <div class="container-fluid">
-            <img src="img/logo.webp" alt="logo_blanco"  width="130px" height="70px"  loading="lazy">
+            <img src="/img/logo.webp" alt="logo_blanco"  width="130px" height="70px"  loading="lazy">
+
+            <div class="d-flex bg-dark" >
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#backNav"
+                    aria-controls="backNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse bg-dark" id="backNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/html/march2025.html">Marzo2025</a>
+                    </li>
+                </ul>
+            </div>
 
             <div class="d-flex bg-dark" >
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -50,42 +65,39 @@
                 </button>
             </div>
 
+        <!-- 
+        
+                ESTO ES SOLO UN PLACEHOLDER PARA CUANDO TENGAMOS EL INDEX CON LA IDEA DE LOS 
+                ANTERIORES YA IMPLEMENTADA, PARA IR VIENDO COMO VAN LOS CAMBIOS PUSE AL FINAL DE ESTE HTML LAS ULTIMAS
+                FOTOS DUPLICADAS
+
+        -->
+
+
+
             <div class="collapse navbar-collapse bg-dark" id="navbarNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Inicio</a>
-                        </li>
-                        
-                        <li>
-                            <p style="color: aliceblue; padding: 0; margin: 0; font-weight: 800; font-size: large;">Obras</p>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="#guernica">Guernica</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#stalingrado">Batalla de Stalingrado</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#rostro_guerra">El Rostro de la Guerra</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#ejercito_rojo">Ejército Rojo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#masacre">Masacre de Quíos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#miliciano">Muerte de un Miliciano</a>
-                        </li>
-                        <li>
-                            <p style="color: aliceblue; padding: 0; margin: 0; font-weight: 800; font-size: large;">Anteriores</p>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="/src/html/march2025.html">Marzo2025</a>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#guernica">Guernica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#stalingrado">Batalla de Stalingrado</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rostro_guerra">El Rostro de la Guerra</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ejercito_rojo">Ejército Rojo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#masacre">Masacre de Quíos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#miliciano">Muerte de un Miliciano</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -94,12 +106,12 @@
         <div class="introduccion">
             <h1>Bienvenido</h1>
 
-            <h2>En esta galería, se despliegan diversas interpretaciones de la naturaleza a través del arte.</h2>
+            <h2>En esta galería, se despliegan diversas interpretaciones del conflicto humano a través del arte.</h2>
 
             <h3>Aquí podrás disfrutar de una pequeña selección de obras con diferentes temáticas mensuales, este mes es:
             </h3>
             <br>
-            <p class="tematica">LA NATURALEZA</p>
+            <p class="tematica">LA GUERRA</p>
             <p>Invitamos a reflexionar sobre la devastación que la guerra deja en su paso. Cada obra refleja las
                 cicatrices invisibles de quienes la sufren. Las ruinas no son solo físicas, sino también emocionales,
                 marcando a generaciones. En estas obras, la violencia se muestra no solo en las armas, sino en la
@@ -114,32 +126,32 @@
         <div class="fotos">
     
             <div class="fotos-previsualizar">
-                <a href="#guernica" target="_blank"><img src="img/2025/marzo/guernica.webp" alt="Guernica" width="150px" height="150px"  loading="lazy"></a>
+                <a href="#guernica" target="_blank"><img src="/img/2025/marzo/guernica.webp" alt="Guernica" width="150px" height="150px"  loading="lazy"></a>
                 <p>GUERNICA</p>
             </div>
     
             <div class="fotos-previsualizar">
-                <a href="#stalingrado" target="_blank"><img src="img/2025/marzo/monumento_batalla_de_stalingrado.webp" alt="Batalla de Stalingrado" width="150px" height="150px"  loading="lazy"></a>
+                <a href="#stalingrado" target="_blank"><img src="/img/2025/marzo/monumento_batalla_de_stalingrado.webp" alt="Batalla de Stalingrado" width="150px" height="150px"  loading="lazy"></a>
                 <p>BATALLA DE STALINGRADO</p>
             </div>
     
             <div class="fotos-previsualizar">
-                <a href="#rostro_guerra" target="_blank"><img src="img/2025/marzo/la_cara-de-la-guerra.webp" alt="El Rostro de la Guerra" width="150px" height="150px"  loading="lazy"></a>
+                <a href="#rostro_guerra" target="_blank"><img src="/img/2025/marzo/la_cara-de-la-guerra.webp" alt="El Rostro de la Guerra" width="150px" height="150px"  loading="lazy"></a>
                 <p>EL ROSTRO DE LA GUERRA</p>
             </div>
     
             <div class="fotos-previsualizar">
-                <a href="#ejercito_rojo" target="_blank"><img src="img/2025/marzo/monumento_heroes_ejercito_rojo.webp" alt="Ejército Rojo" width="150px" height="150px"  loading="lazy"></a>
+                <a href="#ejercito_rojo" target="_blank"><img src="/img/2025/marzo/monumento_heroes_ejercito_rojo.webp" alt="Ejército Rojo" width="150px" height="150px"  loading="lazy"></a>
                 <p>HÉROES DEL EJÉRCITO ROJO</p>
             </div>
     
             <div class="fotos-previsualizar">
-                <a href="#masacre" target="_blank"><img src="img/2025/marzo/la_masacre_de_quios.webp" alt="Masacre de Quíos" width="150px" height="150px"  loading="lazy"></a>
+                <a href="#masacre" target="_blank"><img src="/img/2025/marzo/la_masacre_de_quios.webp" alt="Masacre de Quíos" width="150px" height="150px"  loading="lazy"></a>
                 <p>LA MASACRE DE QUÍOS</p>
             </div>
     
             <div class="fotos-previsualizar">
-                <a href="#miliciano" target="_blank"><img src="img/2025/marzo/muerte_de_un_miliciano.webp" alt="Muerte de un Miliciano" width="150px" height="150px"  loading="lazy"></a>
+                <a href="#miliciano" target="_blank"><img src="/img/2025/marzo/muerte_de_un_miliciano.webp" alt="Muerte de un Miliciano" width="150px" height="150px"  loading="lazy"></a>
                 <p>MUERTE DE UN MILICIANO</p>
             </div>
     
@@ -151,7 +163,7 @@
         <div class="arte-container">
             <h1 class="tematica">GUERNICA</h1>
             <div class="imagenes">
-                <img class="obra" src="img/2025/marzo/guernica.webp" alt="guernica" width="600px" height="450px"  loading="lazy">
+                <img class="obra" src="/img/2025/marzo/guernica.webp" alt="guernica" width="600px" height="450px"  loading="lazy">
             </div>
             <div class="descripcion">
                 <p>Representa el bombardeo de Guernica durante la Guerra Civil Española. Con un estilo cubista y
@@ -166,7 +178,7 @@
         <div class="arte-container">
             <h1 class="tematica">MONUMENTO A LA BATALLA DE STALINGRADO</h1>
             <div class="imagenes">
-                <img class="obra" src="img/2025/marzo/monumento_batalla_de_stalingrado.webp"
+                <img class="obra" src="/img/2025/marzo/monumento_batalla_de_stalingrado.webp"
                     alt="monumento_batalla_de_stalingrado" width="600px" height="450px"  loading="lazy">
             </div>
             <div class="descripcion">
@@ -183,7 +195,7 @@
         <div class="arte-container">
             <h1 class="tematica">EL ROSTRO DE LA GUERRA</h1>
             <div class="imagenes">
-                <img class="obra" src="img/2025/marzo/la_cara-de-la-guerra.webp" alt="la_cara-de-la-guerra"
+                <img class="obra" src="/img/2025/marzo/la_cara-de-la-guerra.webp" alt="la_cara-de-la-guerra"
                     width="600px" height="450px"  loading="lazy">
             </div>
             <div class="descripcion">
@@ -198,7 +210,7 @@
         <div class="arte-container">
             <h1 class="tematica">MONUMENTO A LOS HÉROES DEL EJÉRCITO ROJO</h1>
             <div class="imagenes">
-                <img class="obra" src="img/2025/marzo/monumento_heroes_ejercito_rojo.webp"
+                <img class="obra" src="/img/2025/marzo/monumento_heroes_ejercito_rojo.webp"
                     alt="monumento_heroes_ejercito_rojo" width="600px" height="450px"  loading="lazy">
             </div>
             <div class="descripcion">
@@ -214,7 +226,7 @@
         <div class="arte-container">
             <h1 class="tematica">LA MASACRE DE QUÍOS</h1>
             <div class="imagenes">
-                <img class="obra" src="img/2025/marzo/la_masacre_de_quios.webp" alt="la_masacre_de_quios" width="600px"
+                <img class="obra" src="/img/2025/marzo/la_masacre_de_quios.webp" alt="la_masacre_de_quios" width="600px"
                     height="450px"  loading="lazy">
             </div>
             <div class="descripcion">
@@ -231,18 +243,51 @@
             <h1 class="tematica">MUERTE DE UN MILICIANO
             </h1>
             <div class="imagenes">
-                <img class="obra" src="img/2025/marzo/muerte_de_un_miliciano.webp" alt="muerte_de_un_miliciano"
+                <img class="obra" src="/img/2025/marzo/muerte_de_un_miliciano.webp" alt="muerte_de_un_miliciano"
                     width="600px" height="450px"  loading="lazy">
             </div>
             <div class="descripcion">
                 <p>Fotografía icónica tomada durante la Guerra Civil Española, mostrando el instante en que un soldado
-                    cae abatido. Representa la fragilidad de la vida en la guerra y su impacto en los combatientes.</p>
+                    cae abatido. Representa la fragilidad de la vida en la guerra y su impacto en los combatientes.</p>
                 <a href="https://es.wikipedia.org/wiki/Muerte_de_un_miliciano" target="_blank" class="btn2">Saber
                     más</a>
             </div>
         </div>
     </section>
 
+    <section class="pintura" id="masacre">
+        <div class="arte-container">
+            <h1 class="tematica">LA MASACRE DE QUÍOS</h1>
+            <div class="imagenes">
+                <img class="obra" src="/img/2025/marzo/la_masacre_de_quios.webp" alt="la_masacre_de_quios" width="600px"
+                    height="450px"  loading="lazy">
+            </div>
+            <div class="descripcion">
+                <p>Representa las atrocidades cometidas por el Imperio Otomano contra los griegos en la isla de Quíos.
+                    La obra enfatiza el sufrimiento de los inocentes en los conflictos bélicos.</p>
+                <a href="https://es.wikipedia.org/wiki/La_matanza_de_Qu%C3%ADos" target="_blank" class="btn1">Saber
+                    más</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="escultura" id="miliciano">
+        <div class="arte-container">
+            <h1 class="tematica">MUERTE DE UN MILICIANO
+            </h1>
+            <div class="imagenes">
+                <img class="obra" src="/img/2025/marzo/muerte_de_un_miliciano.webp" alt="muerte_de_un_miliciano"
+                    width="600px" height="450px"  loading="lazy">
+            </div>
+            <div class="descripcion">
+                <p>Fotografía icónica tomada durante la Guerra Civil Española, mostrando el instante en que un soldado
+                    cae abatido. Representa la fragilidad de la vida en la guerra y su impacto en los combatientes.</p>
+                <a href="https://es.wikipedia.org/wiki/Muerte_de_un_miliciano" target="_blank" class="btn2">Saber
+                    más</a>
+            </div>
+        </div>
+    </section>
+    
     <footer class="bg-ligth">
 
         <div class="derechos">
@@ -253,7 +298,7 @@
         
     </footer>
     
-    <script src="./src/bootsjs/bootstrap.bundle.min.js"></script>
+    <script src="/src/bootsjs/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
