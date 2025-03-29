@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/assets.css">
+    <link rel="stylesheet" href="/src/bootscss/bootstrap.min.css">
+    <link rel="icon" type="image/webp" href="/img/modo_noche-dia.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Kairós</title>
+    <style>
+        .navbar {
+            position: fixed !important;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1050;
+        }
+
+        body {
+            min-width: 320px;
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-color: whitesmoke;
+        }
+        .pre-visualizar{
+
+        background-color: #999999;
+        
+        }
+
+        @media (max-width: 767px) {
+            body {
+                padding-top: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-ligth">
+        <div class="container-fluid">
+            <img src="/img/logo.webp" alt="logo_blanco"  width="130px" height="70px"  loading="lazy">
+
+            <div class="d-flex bg-dark" >
+                <a href="/src/html/2025/todas_las_galerias-en.html">
+                    <button class="btn-imagen navbar-dark bg-dark">
+                        <img src="/img/idioma.webp" alt="modo" width="25px" height="25px">
+                    </button>
+                </a>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="pre-visualizar">
+        <h1 class="tematica">GALERÍAS 2025: </h1>
+        <div class="fotos">
+    
+            <div class="fotos-previsualizar">
+                <a href="./marzo/guerra-es.html" target="_blank"><img src="/img/2025/marzo/intro.webp" alt="Guerra" width="150px" height="150px"  loading="lazy"></a>
+                <p>GUERRA - MARZO</p>
+            </div>
+
+            <div class="fotos-previsualizar">
+                <a href="/index.html" target="_blank"><img src="/img/2025/abril/intro.webp" alt="Naturaleza" width="150px" height="150px"  loading="lazy"></a>
+                <p>NATURALEZA - ABRIL</p>
+            </div>
+    
+        </div>
+    </section>
+    
+
+    <footer class="bg-ligth">
+
+        <div class="derechos">
+            <p class="text-center">
+              &copy; 2025 Kairós. Todos los derechos reservados.
+            </p>
+        </div>
+        
+    </footer>
+    
+    <script src="/src/bootsjs/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/assets.css">
-    <link rel="stylesheet" href="./src/bootscss/bootstrap.min.css">
-    <link rel="icon" type="image/webp" href="./img/modo_noche-dia.webp">
+    <link rel="stylesheet" href="/src/css/assets.css">
+    <link rel="stylesheet" href="/src/bootscss/bootstrap.min.css">
+    <link rel="icon" type="image/webp" href="/img/modo_noche-dia.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Kairós</title>
@@ -24,11 +24,25 @@
             overflow-x: hidden;
             background-color: whitesmoke;
         }
+        .intro {
+        background-image: url(/img/2025/abril/intro.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.6),
+                    -1px 1px 8px rgb(255, 255, 255, 0.6),
+                    1px -1px 8px rgb(255, 255, 255, 0.6),
+                    -1px -1px 8px rgba(255, 255, 255, 0.6);
+        padding-top: 1%;
+        padding-bottom: 1%;
+       }
         .pre-visualizar{
 
         background-color: #999999;
         
         }
+
+        
 
         @media (max-width: 767px) {
             body {
@@ -44,6 +58,17 @@
             <img src="img/logo.webp" alt="logo_blanco"  width="130px" height="70px"  loading="lazy">
 
             <div class="d-flex bg-dark" >
+               
+                <a href="/src/html/2025/todas_las_galerias-es.html">
+                    <button class="btn-imagen navbar-dark bg-dark">
+                        <img src="img/galerias_pasadas.webp" alt="modo" width="25px" height="25px">
+                    </button>
+                </a>
+                 <a href="/src/html/2025/todas_las_galerias-es.html">
+                    <button class="btn-imagen navbar-dark bg-dark">
+                        <img src="img/idioma.webp" alt="modo" width="25px" height="25px">
+                    </button>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -79,13 +104,23 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#miliciano">Muerte de un Miliciano</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#batalla_waterloo">La batalla de Waterloo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#madre_hijo_muerto">Madre Con Su Hijo Muerto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gaseados">Gaseados</a>
+                        </li><!-- 
                         <li>
                             <p style="color: aliceblue; padding: 0; margin: 0; font-weight: 800; font-size: large;">Anteriores</p>
                         </li>
 
+
                         <li class="nav-item">
-                            <a class="nav-link" href="/src/html/march2025.html">Marzo2025</a>
-                        </li>
+                            <a class="nav-link" href="/src/html/2025/marzo/guerra-es.html">Marzo2025</a>
+                        </li>-->
                 </ul>
             </div>
         </div>
@@ -100,12 +135,9 @@
             </h3>
             <br>
             <p class="tematica">LA NATURALEZA</p>
-            <p>Invitamos a reflexionar sobre la devastación que la guerra deja en su paso. Cada obra refleja las
-                cicatrices invisibles de quienes la sufren. Las ruinas no son solo físicas, sino también emocionales,
-                marcando a generaciones. En estas obras, la violencia se muestra no solo en las armas, sino en la
-                pérdida de lo más esencial: la humanidad. Sin embargo, aun en la oscuridad, hay un resplandor de
-                esperanza, un anhelo de paz que persiste más allá del estruendo. La guerra, aunque siempre presente, no
-                puede extinguir el sueño de un mundo más justo y tranquilo.</p>
+            <p>Invitamos a reflexionar sobre nuestra relación con el entorno, la belleza de los paisajes y la fragilidad del
+               ecosistema. A través del arte, se destaca la importancia de preservar la naturaleza y se despierta en nosotros
+               la conciencia ambiental, cuestionando cómo nuestras acciones impactan el planeta y qué podemos hacer para protegerlo.</p>
         </div>
     </section>
 
@@ -141,6 +173,20 @@
             <div class="fotos-previsualizar">
                 <a href="#miliciano" target="_blank"><img src="img/2025/marzo/muerte_de_un_miliciano.webp" alt="Muerte de un Miliciano" width="150px" height="150px"  loading="lazy"></a>
                 <p>MUERTE DE UN MILICIANO</p>
+            </div>
+
+            <div class="fotos-previsualizar">
+                <a href="#batalla_waterloo" target="_blank"><img src="img/2025/marzo/batalla_waterloo.webp" alt="La batalla de Waterloo" width="150px" height="150px"  loading="lazy"></a>
+                <p>BATALLA DE WATERLOO</p>
+            </div>
+    
+            <div class="fotos-previsualizar">
+                <a href="#madre_hijo_muerto" target="_blank"><img src="img/2025/marzo/madre_hijo_muerto.webp" alt="Mujer Con Niño Muerto" width="150px" height="150px"  loading="lazy"></a>
+                <p>MADRE CON SU HIJO MUERTO</p>
+            </div>
+            <div class="fotos-previsualizar">
+                <a href="#gaseados" target="_blank"><img src="img/2025/marzo/gassed.webp" alt="Gaseados" width="150px" height="150px"  loading="lazy"></a>
+                <p>GASEADOS</p>
             </div>
     
         </div>
@@ -243,6 +289,56 @@
         </div>
     </section>
 
+    <section class="pintura" id="batalla_waterloo">
+        <div class="arte-container">
+            <h1 class="tematica">BATALLA DE WATERLOO</h1>
+            <div class="imagenes">
+                <img class="obra" src="img/2025/marzo/batalla_waterloo.webp" alt="La batalla de Waterloo" width="600px" height="450px"  loading="lazy">
+            </div>
+            <div class="descripcion">
+                <p>Retrata el caos y la brutalidad de la famosa batalla de 1815, donde las fuerzas de Napoleón Bonaparte 
+                   fueron derrotadas por las tropas aliadas lideradas por el duque de Wellington y el príncipe Blücher. 
+                   La obra muestra un paisaje desolado con soldados, caballería y artillería en combate, reflejando la 
+                   confusión y el sufrimiento del enfrentamiento, marcando el fin de las Guerras Napoleónicas y el exilio de Napoleón.</p>
+                <a href="https://es.wikipedia.org/wiki/Batalla_de_Waterloo" target="_blank" class="btn1">Saber más</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="escultura" id="madre_hijo_muerto">
+        <div class="arte-container">
+            <h1 class="tematica">MADRE CON SU HIJO MUERTO</h1>
+            <div class="imagenes">
+                <img class="obra" src="img/2025/marzo/madre_hijo_muerto.webp"
+                    alt="madre_nino_muerto" width="600px" height="450px"  loading="lazy">
+            </div>
+            <div class="descripcion">
+                <p>Es una escultura hecha en bronce, que muestra a una madre sosteniendo a su hijo fallecido en sus brazos,
+                    reflejando desesperación y sufrimiento. Representando el impacto de la guerra y la tragedia social, mostrando
+                    el sufrimiento universal de las mujeres que pierden a sus hijos.
+                </p>
+                <a href="https://focusonwomen.es/kathe-kollwitz-la-artista-berlinesa-de-la-otra-piedad/" target="_blank" class="btn2">Saber
+                    más</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="pintura" id="gaseados">
+        <div class="arte-container">
+            <h1 class="tematica">GASEADOS</h1>
+            <div class="imagenes">
+                <img class="obra" src="img/2025/marzo/gassed.webp" alt="gaseados"
+                    width="600px" height="450px"  loading="lazy">
+            </div>
+            <div class="descripcion">
+                <p>La obra muestra a soldados británicos víctimas de un ataque con gas venenoso durante la Primera Guerra Mundial
+                 luchando por respirar, con el rostro cubierto por vendas o máscaras, mientras son transportados a un hospital de campaña.</p>
+                <a href="https://es.wikipedia.org/wiki/Gaseados" target="_blank" class="btn1">Saber más</a>
+            </div>
+        </div>
+    </section>
+
+
     <footer class="bg-ligth">
 
         <div class="derechos">
@@ -253,7 +349,7 @@
         
     </footer>
     
-    <script src="./src/bootsjs/bootstrap.bundle.min.js"></script>
+    <script src="/src/bootsjs/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

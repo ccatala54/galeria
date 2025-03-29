@@ -7,19 +7,6 @@ li{
     justify-content: flex-end;
 }
 
-.intro {
-    background-image: url(../../img/intro.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.6),
-                -1px 1px 8px rgb(255, 255, 255, 0.6),
-                1px -1px 8px rgb(255, 255, 255, 0.6),
-                -1px -1px 8px rgba(255, 255, 255, 0.6);
-    padding-top: 1%;
-    padding-bottom: 1%;
-}
-
 .introduccion {
     background: rgba(200, 190, 190, 0.414);
     border-radius: 10px;

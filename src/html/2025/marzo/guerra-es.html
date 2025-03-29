@@ -24,11 +24,25 @@
             overflow-x: hidden;
             background-color: whitesmoke;
         }
+        .intro {
+            background-image: url(/img/2025/marzo/intro.webp);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.6),
+                        -1px 1px 8px rgb(255, 255, 255, 0.6),
+                        1px -1px 8px rgb(255, 255, 255, 0.6),
+                        -1px -1px 8px rgba(255, 255, 255, 0.6);
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
         .pre-visualizar{
 
         background-color: #999999;
         
         }
+
+        
 
         @media (max-width: 767px) {
             body {
@@ -44,60 +58,71 @@
             <img src="/img/logo.webp" alt="logo_blanco"  width="130px" height="70px"  loading="lazy">
 
             <div class="d-flex bg-dark" >
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#backNav"
-                    aria-controls="backNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
+                <a href="/src/html/2025/todas_las_galerias-es.html">
+                    <button class="btn-imagen navbar-dark bg-dark">
+                        <img src="/img/galerias_pasadas.webp" alt="modo" width="25px" height="25px">
+                    </button>
+                </a>
+                 <a href="/src/html/2025/marzo/guerra-en.html">
+                    <button class="btn-imagen navbar-dark bg-dark">
+                        <img src="/img/idioma.webp" alt="modo" width="25px" height="25px">
+                    </button>
+                </a>
 
-            <div class="collapse navbar-collapse bg-dark" id="backNav">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/src/html/march2025.html">Marzo2025</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="d-flex bg-dark" >
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
 
-        <!-- 
-        
-                ESTO ES SOLO UN PLACEHOLDER PARA CUANDO TENGAMOS EL INDEX CON LA IDEA DE LOS 
-                ANTERIORES YA IMPLEMENTADA, PARA IR VIENDO COMO VAN LOS CAMBIOS PUSE AL FINAL DE ESTE HTML LAS ULTIMAS
-                FOTOS DUPLICADAS
-
-        -->
-
-
-
             <div class="collapse navbar-collapse bg-dark" id="navbarNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#guernica">Guernica</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#stalingrado">Batalla de Stalingrado</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#rostro_guerra">El Rostro de la Guerra</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#ejercito_rojo">Ejército Rojo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#masacre">Masacre de Quíos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#miliciano">Muerte de un Miliciano</a>
-                    </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Inicio</a>
+                        </li>
+                        
+                        <li>
+                            <p style="color: aliceblue; padding: 0; margin: 0; font-weight: 800; font-size: large;">Obras</p>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#guernica">Guernica</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#stalingrado">Batalla de Stalingrado</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#rostro_guerra">El Rostro de la Guerra</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ejercito_rojo">Ejército Rojo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#masacre">Masacre de Quíos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#miliciano">Muerte de un Miliciano</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#batalla_waterloo">La batalla de Waterloo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#madre_hijo_muerto">Madre Con Su Hijo Muerto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gaseados">Gaseados</a>
+                        </li>
+                        <!-- 
+                        <li>
+                            <p style="color: aliceblue; padding: 0; margin: 0; font-weight: 800; font-size: large;">Anteriores</p>
+                        </li>
+
+            
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/src/html/2025/marzo/guerra-es.html">Marzo2025</a>
+                        </li>-->
                 </ul>
             </div>
         </div>
@@ -106,12 +131,12 @@
         <div class="introduccion">
             <h1>Bienvenido</h1>
 
-            <h2>En esta galería, se despliegan diversas interpretaciones del conflicto humano a través del arte.</h2>
+            <h2>En esta galería, se despliegan diversas interpretaciones de la naturaleza a través del arte.</h2>
 
             <h3>Aquí podrás disfrutar de una pequeña selección de obras con diferentes temáticas mensuales, este mes es:
             </h3>
             <br>
-            <p class="tematica">LA GUERRA</p>
+            <p class="tematica">LA NATURALEZA</p>
             <p>Invitamos a reflexionar sobre la devastación que la guerra deja en su paso. Cada obra refleja las
                 cicatrices invisibles de quienes la sufren. Las ruinas no son solo físicas, sino también emocionales,
                 marcando a generaciones. En estas obras, la violencia se muestra no solo en las armas, sino en la
@@ -153,6 +178,20 @@
             <div class="fotos-previsualizar">
                 <a href="#miliciano" target="_blank"><img src="/img/2025/marzo/muerte_de_un_miliciano.webp" alt="Muerte de un Miliciano" width="150px" height="150px"  loading="lazy"></a>
                 <p>MUERTE DE UN MILICIANO</p>
+            </div>
+
+            <div class="fotos-previsualizar">
+                <a href="#batalla_waterloo" target="_blank"><img src="/img/2025/marzo/batalla_waterloo.webp" alt="La batalla de Waterloo" width="150px" height="150px"  loading="lazy"></a>
+                <p>BATALLA DE WATERLOO</p>
+            </div>
+    
+            <div class="fotos-previsualizar">
+                <a href="#madre_hijo_muerto" target="_blank"><img src="/img/2025/marzo/madre_hijo_muerto.webp" alt="Mujer Con Niño Muerto" width="150px" height="150px"  loading="lazy"></a>
+                <p>MADRE CON SU HIJO MUERTO</p>
+            </div>
+            <div class="fotos-previsualizar">
+                <a href="#gaseados" target="_blank"><img src="/img/2025/marzo/gassed.webp" alt="Gaseados" width="150px" height="150px"  loading="lazy"></a>
+                <p>GASEADOS</p>
             </div>
     
         </div>
@@ -248,46 +287,63 @@
             </div>
             <div class="descripcion">
                 <p>Fotografía icónica tomada durante la Guerra Civil Española, mostrando el instante en que un soldado
-                    cae abatido. Representa la fragilidad de la vida en la guerra y su impacto en los combatientes.</p>
+                    cae abatido. Representa la fragilidad de la vida en la guerra y su impacto en los combatientes.</p>
                 <a href="https://es.wikipedia.org/wiki/Muerte_de_un_miliciano" target="_blank" class="btn2">Saber
                     más</a>
             </div>
         </div>
     </section>
 
-    <section class="pintura" id="masacre">
+    <section class="pintura" id="batalla_waterloo">
         <div class="arte-container">
-            <h1 class="tematica">LA MASACRE DE QUÍOS</h1>
+            <h1 class="tematica">BATALLA DE WATERLOO</h1>
             <div class="imagenes">
-                <img class="obra" src="/img/2025/marzo/la_masacre_de_quios.webp" alt="la_masacre_de_quios" width="600px"
-                    height="450px"  loading="lazy">
+                <img class="obra" src="/img/2025/marzo/batalla_waterloo.webp" alt="La batalla de Waterloo" width="600px" height="450px"  loading="lazy">
             </div>
             <div class="descripcion">
-                <p>Representa las atrocidades cometidas por el Imperio Otomano contra los griegos en la isla de Quíos.
-                    La obra enfatiza el sufrimiento de los inocentes en los conflictos bélicos.</p>
-                <a href="https://es.wikipedia.org/wiki/La_matanza_de_Qu%C3%ADos" target="_blank" class="btn1">Saber
+                <p>Retrata el caos y la brutalidad de la famosa batalla de 1815, donde las fuerzas de Napoleón Bonaparte 
+                   fueron derrotadas por las tropas aliadas lideradas por el duque de Wellington y el príncipe Blücher. 
+                   La obra muestra un paisaje desolado con soldados, caballería y artillería en combate, reflejando la 
+                   confusión y el sufrimiento del enfrentamiento, marcando el fin de las Guerras Napoleónicas y el exilio de Napoleón.</p>
+                <a href="https://es.wikipedia.org/wiki/Batalla_de_Waterloo" target="_blank" class="btn1">Saber más</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="escultura" id="madre_hijo_muerto">
+        <div class="arte-container">
+            <h1 class="tematica">MADRE CON SU HIJO MUERTO</h1>
+            <div class="imagenes">
+                <img class="obra" src="/img/2025/marzo/madre_hijo_muerto.webp"
+                    alt="madre_nino_muerto" width="600px" height="450px"  loading="lazy">
+            </div>
+            <div class="descripcion">
+                <p>Es una escultura hecha en bronce, que muestra a una madre sosteniendo a su hijo fallecido en sus brazos,
+                    reflejando desesperación y sufrimiento. Representando el impacto de la guerra y la tragedia social, mostrando
+                    el sufrimiento universal de las mujeres que pierden a sus hijos.
+                </p>
+                <a href="https://focusonwomen.es/kathe-kollwitz-la-artista-berlinesa-de-la-otra-piedad/" target="_blank" class="btn2">Saber
                     más</a>
             </div>
         </div>
     </section>
 
-    <section class="escultura" id="miliciano">
+    <section class="pintura" id="gaseados">
         <div class="arte-container">
-            <h1 class="tematica">MUERTE DE UN MILICIANO
-            </h1>
+            <h1 class="tematica">GASEADOS</h1>
             <div class="imagenes">
-                <img class="obra" src="/img/2025/marzo/muerte_de_un_miliciano.webp" alt="muerte_de_un_miliciano"
+                <img class="obra" src="/img/2025/marzo/gassed.webp" alt="gaseados"
                     width="600px" height="450px"  loading="lazy">
             </div>
             <div class="descripcion">
-                <p>Fotografía icónica tomada durante la Guerra Civil Española, mostrando el instante en que un soldado
-                    cae abatido. Representa la fragilidad de la vida en la guerra y su impacto en los combatientes.</p>
-                <a href="https://es.wikipedia.org/wiki/Muerte_de_un_miliciano" target="_blank" class="btn2">Saber
-                    más</a>
+                <p>La obra muestra a soldados británicos víctimas de un ataque con gas venenoso durante la Primera Guerra Mundial
+                 luchando por respirar, con el rostro cubierto por vendas o máscaras, mientras son transportados a un hospital de campaña.</p>
+                <a href="https://es.wikipedia.org/wiki/Gaseados" target="_blank" class="btn1">Saber más</a>
             </div>
         </div>
     </section>
-    
+
+
     <footer class="bg-ligth">
 
         <div class="derechos">
