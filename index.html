@@ -24,13 +24,25 @@
             overflow-x: hidden;
             background-color: whitesmoke;
         }
+        .intro {
+            background-image: url(/img/2025/mayo/intro.webp);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.6),
+                        -1px 1px 8px rgb(255, 255, 255, 0.6),
+                        1px -1px 8px rgb(255, 255, 255, 0.6),
+                        -1px -1px 8px rgba(255, 255, 255, 0.6);
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
         .pre-visualizar{
 
         background-color: #999999;
-        height:97vh;
-
         
         }
+
+        
 
         @media (max-width: 767px) {
             body {
@@ -43,7 +55,7 @@
 <body>
     <nav class="navbar navbar-dark bg-ligth">
         <div class="container-fluid">
-            <img src="/img/logo.webp" alt="logo_blanco"  width="130px" height="70px"  loading="lazy">
+            <a href="#home" ><img src="/img/logo.webp" alt="logo_blanco" width="130px" height="70px"  loading="lazy"></a>
 
             <div class="d-flex bg-dark" >
                 <a href="/src/html/todas_las_galerias-es.html">
@@ -51,39 +63,293 @@
                         <img src="/img/galerias_pasadas.webp" alt="modo" width="25px" height="25px">
                     </button>
                 </a>
-                <a href="/src/html/2025/galerias_2025-en.html">
+                <a href="/src/html/2025/galerias_2025-es.html">
+                    <button class="btn-imagen navbar-dark bg-dark">
+                        <img src="/img/retroceder.webp" alt="modo" width="25px" height="25px">
+                    </button>
+                </a>
+                 <a href="/src/html/2025/mayo/musica-en.html">
                     <button class="btn-imagen navbar-dark bg-dark">
                         <img src="/img/en_idioma.webp" alt="modo" width="25px" height="25px">
                     </button>
                 </a>
-                
 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
 
+            <div class="collapse navbar-collapse bg-dark" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Inicio</a>
+                        </li>
+                        
+                        <li>
+                            <p style="color: aliceblue; padding: 0; margin: 0; font-weight: 800; font-size: large;">Obras</p>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#el_concierto">El concierto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#monumento_a_sibelius">Monumento a Sibelius</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#concierto_de_jovenes">Concierto de jóvenes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#espiritu_de_la_musica">El espíritu de la música</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#la_musica_en_las_tullerias">La música en las Tullerías</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#untitled">Untitled</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#la_musica">La música</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#mozart">Mozart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#el_viejo_guitarrista_ciego">El viejo guitarrista ciego</a>
+                        </li>
+
+                </ul>
+            </div>
         </div>
     </nav>
+    <section class="intro" id="home">
+        <div class="introduccion">
+            <h1>Bienvenido</h1>
+
+            <h2>En esta galería, se despliegan diversas interpretaciones de la naturaleza a través del arte.</h2>
+
+            <h3>Aquí podrás disfrutar de una pequeña selección de obras con diferentes temáticas mensuales, este mes es:
+            </h3>
+            <br>
+            <p class="tematica">LA MÚSICA</p>
+            <p>Invitamos a reflexionar sobre el poder transformador de la música. Cada obra aquí expuesta es eco de emociones
+               profundas, vibraciones que conectan almas más allá de palabras. La música no solo se escucha: se siente, se vive,
+               se recuerda. Es refugio en el caos, consuelo en el dolor, y celebración en la alegría. A través de ella, los artistas
+               capturan lo invisible: la nostalgia, la libertad, el amor y la rebeldía. En estas creaciones, la música no es solo tema,
+               sino lenguaje universal que nos recuerda lo que nos une. En un mundo de ruido, la música sigue siendo armonía.</p>
+        </div>
+    </section>
 
     <section class="pre-visualizar">
-        <h1 class="tematica">GALERÍAS 2025: </h1>
+        <h1 class="tematica">EL LEGADO DEL ARTE DE LA MÚSICA</h1>
         <div class="fotos">
     
             <div class="fotos-previsualizar">
-                <a href="/src/html/2025/marzo/guerra-es.html"><img src="/img/2025/marzo/intro.webp" alt="Guerra" width="150px" height="150px"  loading="lazy"></a>
-                <p>GUERRA - MARZO</p>
+                <a href="#el_concierto" ><img src="/img/2025/mayo/el_concierto.webp" alt="el_concierto" width="150px" height="150px"  loading="lazy"></a>
+                <p>EL CONCIERTO</p>
+            </div>
+    
+            <div class="fotos-previsualizar">
+                <a href="#monumento_a_sibelius" ><img src="/img/2025/mayo/monumento_a_sibelius.webp" alt="monumento_a_sibelius" width="150px" height="150px"  loading="lazy"></a>
+                <p>MONUMENTO A SIBELIUS</p>
+            </div>
+    
+            <div class="fotos-previsualizar">
+                <a href="#concierto_de_jovenes" ><img src="/img/2025/mayo/concierto_jovenes.webp" alt="concierto_jovenes" width="150px" height="150px"  loading="lazy"></a>
+                <p>CONCIERTO DE JÓVENES</p>
+            </div>
+    
+            <div class="fotos-previsualizar">
+                <a href="#espiritu_de_la_musica" ><img src="/img/2025/mayo/espiritu_de_la_musica.webp" alt="espiritu_de_la_musica" width="150px" height="150px"  loading="lazy"></a>
+                <p>EL ESPÍRITU DE LA MÚSICA</p>
+            </div>
+    
+            <div class="fotos-previsualizar">
+                <a href="#la_musica_en_las_tullerias" ><img src="/img/2025/mayo/la_musica_en_las_tullerias.webp" alt="la_musica_en_las_tullerias" width="150px" height="150px"  loading="lazy"></a>
+                <p>LA MÚSICA EN LAS TULLERÍAS</p>
+            </div>
+    
+            <div class="fotos-previsualizar">
+                <a href="#untitled" ><img src="/img/2025/mayo/untitled.webp" alt="untitled" width="150px" height="150px"  loading="lazy"></a>
+                <p>UNTITLED</p>
             </div>
 
             <div class="fotos-previsualizar">
-                <a href="/src/html/2025/abril/naturaleza-es.html"><img src="/img/2025/abril/intro.webp" alt="Naturaleza" width="150px" height="150px"  loading="lazy"></a>
-                <p>NATURALEZA - ABRIL</p>
+                <a href="#la_musica" ><img src="/img/2025/mayo/la_musica.webp" alt="la_musica" width="150px" height="150px"  loading="lazy"></a>
+                <p>LA MÚSICA</p>
+            </div>
+    
+            <div class="fotos-previsualizar">
+                <a href="#mozart" ><img src="/img/2025/mayo/mozart_arena.webp" alt="Mozart" width="150px" height="150px"  loading="lazy"></a>
+                <p>MOZART</p>
             </div>
             <div class="fotos-previsualizar">
-                <a href="/src/html/2025/mayo/musica-es.html"><img src="/img/2025/mayo/intro.webp" alt="Naturaleza" width="150px" height="150px"  loading="lazy"></a>
-                <p>MÚSICA - MAYO</p>
+                <a href="#el_viejo_guitarrista_ciego" ><img src="/img/2025/mayo/el_viejo_guitarrista_ciego.webp" alt="el_viejo_guitarrista_ciego" width="150px" height="150px"  loading="lazy"></a>
+                <p>EL VIEJO GUITARRISTA CIEGO</p>
             </div>
     
         </div>
     </section>
     
+
+    <section class="pintura" id="el_concierto">
+        <div class="arte-container">
+            <h1 class="tematica">EL CONCIERTO</h1>
+            <div class="imagenes">
+                <img class="obra" src="/img/2025/mayo/el_concierto.webp" alt="el_concierto" width="600px" height="450px"  loading="lazy">
+            </div>
+            <div class="descripcion">
+                <p>Representa una escena íntima y cotidiana del siglo XVII, donde tres figuras disfrutan
+                   de la música en un entorno doméstico. Con un estilo barroco y un uso magistral de la luz,
+                   Vermeer transmite serenidad, armonía y equilibrio. La obra evoca el valor de la música
+                   como forma de conexión y expresión humana.</p>
+
+                <a href="https://es.wikipedia.org/wiki/El_concierto_(Vermeer)"  class="btn1">Saber más</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="escultura" id="monumento_a_sibelius">
+        <div class="arte-container">
+            <h1 class="tematica">MONUMENTO A SIBELIUS</h1>
+            <div class="imagenes">
+                <img class="obra" src="/img/2025/mayo/monumento_a_sibelius.webp"
+                    alt="monumento_a_sibelius" width="600px" height="450px"  loading="lazy">
+            </div>
+            <div class="descripcion">
+                <p>Representa un homenaje abstracto al compositor finlandés Jean Sibelius. Compuesto por
+                   más de 600 tubos de acero que evocan órganos, el monumento sugiere la fuerza y
+                   profundidad de su música. Con un enfoque moderno y expresionista, simboliza la conexión
+                   entre arte, naturaleza y sonido.</p>
+                <a href="https://es.wikipedia.org/wiki/Monumento_a_Sibelius"  class="btn2">Saber más</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="pintura" id="concierto_de_jovenes">
+        <div class="arte-container">
+            <h1 class="tematica">CONCIERTO DE JÓVENES</h1>
+            <div class="imagenes">
+                <img class="obra" src="/img/2025/mayo/concierto_jovenes.webp" alt="concierto_de_jovenes"
+                    width="600px" height="450px"  loading="lazy">
+            </div>
+            <div class="descripcion">
+                <p>Representa a un grupo de jóvenes reunidos en torno a la música, reflejando alegría, energía
+                   y camaradería. Con un estilo figurativo y colorido, la obra celebra la vitalidad juvenil y
+                   el poder de la música como medio de unión y expresión. Transmite optimismo y dinamismo.</p>
+
+                <a href="https://es.wikipedia.org/wiki/Los_m%C3%BAsicos"  class="btn1">Saber más</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="escultura" id="espiritu_de_la_musica">
+        <div class="arte-container">
+            <h1 class="tematica">EL ESPÍRITU DE LA MÚSICA</h1>
+            <div class="imagenes">
+                <img class="obra" src="/img/2025/mayo/espiritu_de_la_musica.webp"
+                    alt="espiritu_de_la_musica" width="600px" height="450px"  loading="lazy">
+            </div>
+            <div class="descripcion">
+                <p>Es un monumento dedicado al director de orquesta Theodore Thomas, representando la esencia
+                   de la música como fuerza transformadora. La figura femenina, que sostiene una trompeta y
+                   simboliza el espíritu de la música, emana una sensación de movimiento y armonía. Con un
+                   diseño clásico y estilizado, la obra captura el legado de Thomas y su influencia en la
+                   música clásica americana.</p>
+                <a href="https://en.wikipedia.org/wiki/Spirit_of_Music_%28sculpture%29"
+                     class="btn2">Saber más</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="pintura" id="la_musica_en_las_tullerias">
+        <div class="arte-container">
+            <h1 class="tematica">LA MÚSICA EN LAS TULLERÍAS</h1>
+            <div class="imagenes">
+                <img class="obra" src="/img/2025/mayo/la_musica_en_las_tullerias.webp" alt="la_musica_en_las_tullerias" width="600px"
+                    height="450px"  loading="lazy">
+            </div>
+            <div class="descripcion">
+                <p>Obra que captura la vibrante atmósfera de un jardín parisino durante el siglo XIX. Con un 
+                   estilo impresionista, Degas retrata a una multitud disfrutando de la música al aire libre,
+                   mientras se observa la interacción entre los personajes y el entorno. La composición transmite
+                   una sensación de elegancia y liviandad, usando una paleta suave de colores y destacando la vida
+                   cotidiana en la sociedad parisina.</p>
+                <a href="https://es.wikipedia.org/wiki/La_m%C3%BAsica_en_las_Tuller%C3%ADas"  class="btn1">Saber más</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="escultura" id="untitled">
+        <div class="arte-container">
+            <h1 class="tematica">UNTITLED</h1>
+            <div class="imagenes">
+                <img class="obra" src="/img/2025/mayo/untitled.webp" alt="untitled"
+                    width="600px" height="450px"  loading="lazy">
+            </div>
+            <div class="descripcion">
+                <p>Obra que captura la esencia dinámica y emocional del jazz. A través de un estilo abstracto y
+                   expresionista, Spaulding representa a los músicos en un movimiento rítmico y fluido, transmitiendo
+                   la energía y la improvisación características del género. La paleta de colores vibrantes y las formas
+                   fragmentadas reflejan el caos y la libertad creativa inherentes al jazz, mientras que la ausencia
+                   de título sugiere una interpretación abierta y personal del espectador sobre la música y su influencia.</p>
+                <a href="https://en.wikipedia.org/wiki/Untitled_%28Jazz_Musicians%29"  class="btn2">Saber más</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="pintura" id="la_musica">
+        <div class="arte-container">
+            <h1 class="tematica">LA MÚSICA</h1>
+            <div class="imagenes">
+                <img class="obra" src="/img/2025/mayo/la_musica.webp" alt="la_musica" width="600px" height="450px"  loading="lazy">
+            </div>
+            <div class="descripcion">
+                <p>Celebra la armonía y el ritmo a través de formas simples y colores audaces. La pintura presenta
+                   figuras humanas que parecen danzar al compás de la música, transmitiendo una sensación de movimiento
+                   y fluidez. Con su estilo fauvista, Matisse utiliza colores planos y composiciones equilibradas para evocar
+                   la energía y la emoción que la música puede provocar. La obra refleja su creencia en el poder de la
+                   pintura para expresar sentimientos universales y la conexión entre el arte y la vida.</p>
+                <a href="https://es.wikipedia.org/wiki/La_m%C3%BAsica_(Matisse)"  class="btn1">Saber más</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="escultura" id="mozart">
+        <div class="arte-container">
+            <h1 class="tematica">MOZART</h1>
+            <div class="imagenes">
+                <img class="obra" src="/img/2025/mayo/mozart_arena.webp"
+                    alt="mozart" width="600px" height="450px"  loading="lazy">
+            </div>
+            <div class="descripcion">
+                <p>Escultura impresionante creada en el Festival Internacional de Escultura en Arena de 2013 en el Algarve.
+                   Los artistas de ProSandArt utilizaron arena para esculpir la figura de Mozart, capturando la esencia del
+                   compositor clásico en una obra efímera y detallada. Este evento, que rindió homenaje a músicos y compositores
+                   célebres de distintas épocas, fusionando el arte clásico con la música moderna en un formato único y creativo.</p>
+                <a href="https://ivalook.com/%D0%BF%D1%8F%D1%81%D1%8A%D1%87%D0%BD%D0%B8%D1%82%D0%B5-%D1%81%D0%BA%D1%83%D0%BB%D0%BF%D1%82%D1%83%D1%80%D0%B8/"  class="btn2">Saber más</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="pintura" id="el_viejo_guitarrista_ciego">
+        <div class="arte-container">
+            <h1 class="tematica">EL VIEJO GUITARRISTA CIEGO</h1>
+            <div class="imagenes">
+                <img class="obra" src="/img/2025/mayo/el_viejo_guitarrista_ciego.webp" alt="el_viejo_guitarrista_ciego"
+                    width="600px" height="450px"  loading="lazy">
+            </div>
+            <div class="descripcion">
+                <p>Representa a un anciano ciego tocando la guitarra, sumido en la pobreza y la soledad. Con un estilo propio
+                   de la etapa azul de Picasso, la obra transmite melancolía, sufrimiento y compasión. A través de tonos fríos
+                   y formas alargadas, expresa la fragilidad humana y la dignidad en la adversidad.</p>
+
+                <a href="https://es.wikipedia.org/wiki/El_viejo_guitarrista_ciego"  class="btn1">Saber más</a>
+            </div>
+        </div>
+    </section>
+
 
     <footer class="bg-ligth">
 
