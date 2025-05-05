@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/assets.css">
+    <link rel="stylesheet" href="/src/bootscss/bootstrap.min.css">
+    <link rel="icon" type="image/webp" href="/img/modo_noche-dia.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Kairós</title>
+    <style>
+        .navbar {
+            position: fixed !important;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1050;
+        }
+
+        body {
+            min-width: 320px;
+            min-height: 100vh;
+            overflow-x: hidden;
+            background-color: whitesmoke;
+        }
+        .pre-visualizar{
+
+        background-color: #999999;
+        height:97vh;
+        
+        }
+
+        @media (max-width: 767px) {
+            body {
+                padding-top: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-ligth">
+        <div class="container-fluid">
+            <img src="/img/logo.webp" alt="logo_blanco"  width="130px" height="70px"  loading="lazy">
+
+            <div class="d-flex bg-dark" >
+                <a href="/src/html/todas_las_galerias-en.html">
+                    <button class="btn-imagen navbar-dark bg-dark">
+                        <img src="/img/en_idioma.webp" alt="modo" width="25px" height="25px">
+                    </button>
+                </a>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="pre-visualizar">
+        <h1 class="tematica">TODAS LAS GALERÍAS: </h1>
+        <div class="fotos">
+    
+            <div class="fotos-previsualizar">
+                <a href="/src/html/2024/galerias_2024-es.html"><img src="/img/years/2024.webp" alt="2024" width="150px" height="150px"  loading="lazy"></a>
+            </div>
+
+            <div class="fotos-previsualizar">
+                <a href="/src/html/2025/galerias_2025-es.html" ><img src="/img/years/2025.webp" alt="2025" width="150px" height="150px"  loading="lazy"></a>
+            </div>
+    
+        </div>
+    </section>
+    
+
+    <footer class="bg-ligth">
+
+        <div class="derechos">
+            <p class="text-center">
+              &copy; 2025 Kairós. Todos los derechos reservados.
+            </p>
+        </div>
+        
+    </footer>
+    
+    <script src="/src/bootsjs/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
