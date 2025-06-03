@@ -44,7 +44,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30%;
+    width: 22%;
     margin-bottom: 20px;
     overflow: visible; /* Permite que la imagen agrandada se muestre sin recortes */
     position: relative; /* Establece un contexto para el posicionamiento */
@@ -203,31 +203,42 @@ p {
     margin: 0;
 }
 
+@media (max-width: 1024px) {
+  .fotos-previsualizar {
+    width: 30%;
+  }
+}
 
-@media (max-width: 768px) {
-    .arte-container {
-        flex-direction: column;
-        gap: 10px;
-    }
+/* Tablets (≥768px y ≤1023px) */
+@media (max-width: 1023px) {
+  .arte-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    .obra {
-        max-width: 100%;
-    }
+  .obra,
+  .descripcion,
+  .btn1 {
+    max-width: 100%;
+    width: 100%;
+  }
 
-    .descripcion {
-        max-width: 100%;
-    }
+  .fotos-previsualizar {
+    width: 45%;
+  }
+}
 
-    .btn1 {
-        width: 100%;
-    }
-    .fotos-previsualizar {
-        width: 45%;
-      }
-    }
-    
-@media (max-width: 480px) {
-    .fotos-previsualizar {
-        width: 100%;
-      }
+/* Teléfonos grandes (≥576px y ≤767px) */
+@media (max-width: 767px) {
+  .fotos-previsualizar {
+    width: 48%;
+  }
+}
+
+/* Teléfonos pequeños (≤575px) */
+@media (max-width: 575px) {
+  .fotos-previsualizar {
+    width: 100%;
+  }
 }
