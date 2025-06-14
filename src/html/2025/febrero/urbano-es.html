@@ -145,7 +145,7 @@
         </div>
     <div id="lightbox" class="lightbox">
         <span class="close-btn">&times;</span>
-        <img class="lightbox-img" src="" alt="Imagen ampliada">
+        <img class="lightbox-img" alt="Imagen ampliada">
     </div>
 
 </section>
@@ -210,7 +210,7 @@
         </div>
     <div id="lightbox" class="lightbox">
         <span class="close-btn">&times;</span>
-        <img class="lightbox-img" src="" alt="Imagen ampliada">
+        <img class="lightbox-img" alt="Imagen ampliada">
     </div>
 
 </section>
@@ -233,7 +233,7 @@
         </div>
     <div id="lightbox" class="lightbox">
         <span class="close-btn">&times;</span>
-        <img class="lightbox-img" src="" alt="Imagen ampliada">
+        <img class="lightbox-img" alt="Imagen ampliada">
     </div>
 
 </section>
@@ -253,7 +253,7 @@
         </div>
     <div id="lightbox" class="lightbox">
         <span class="close-btn">&times;</span>
-        <img class="lightbox-img" src="" alt="Imagen ampliada">
+        <img class="lightbox-img" alt="Imagen ampliada">
     </div>
 
 </section>
@@ -274,7 +274,7 @@
         </div>
     <div id="lightbox" class="lightbox">
         <span class="close-btn">&times;</span>
-        <img class="lightbox-img" src="" alt="Imagen ampliada">
+        <img class="lightbox-img" alt="Imagen ampliada">
     </div>
 
 </section>
@@ -296,7 +296,7 @@
         </div>
     <div id="lightbox" class="lightbox">
         <span class="close-btn">&times;</span>
-        <img class="lightbox-img" src="" alt="Imagen ampliada">
+        <img class="lightbox-img" alt="Imagen ampliada">
     </div>
 
 </section>
@@ -317,7 +317,7 @@
         </div>
     <div id="lightbox" class="lightbox">
         <span class="close-btn">&times;</span>
-        <img class="lightbox-img" src="" alt="Imagen ampliada">
+        <img class="lightbox-img" alt="Imagen ampliada">
     </div>
 
 </section>
@@ -336,7 +336,7 @@
         </div>
     <div id="lightbox" class="lightbox">
         <span class="close-btn">&times;</span>
-        <img class="lightbox-img" src="" alt="Imagen ampliada">
+        <img class="lightbox-img" alt="Imagen ampliada">
     </div>
 
 </section>
@@ -355,7 +355,7 @@
         </div>
     <div id="lightbox" class="lightbox">
         <span class="close-btn">&times;</span>
-        <img class="lightbox-img" src="" alt="Imagen ampliada">
+        <img class="lightbox-img" alt="Imagen ampliada">
     </div>
 
 </section>
@@ -375,7 +375,7 @@
         </div>
     <div id="lightbox" class="lightbox">
         <span class="close-btn">&times;</span>
-        <img class="lightbox-img" src="" alt="Imagen ampliada">
+        <img class="lightbox-img" alt="Imagen ampliada">
     </div>
 
 </section>
@@ -395,7 +395,7 @@
         </div>
     <div id="lightbox" class="lightbox">
         <span class="close-btn">&times;</span>
-        <img class="lightbox-img" src="" alt="Imagen ampliada">
+        <img class="lightbox-img" alt="Imagen ampliada">
     </div>
 
 </section>
@@ -421,9 +421,13 @@ document.querySelectorAll('.obra').forEach(img => {
 });
 
 document.querySelector('.close-btn').addEventListener('click', function () {
-    document.getElementById('lightbox').style.display = 'none';
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.querySelector('.lightbox-img');
+    lightbox.style.display = 'none';
+    lightboxImg.removeAttribute('src');
 });
 </script>
+
 
     <script src="/src/bootsjs/bootstrap.bundle.min.js"></script>
 </body>
