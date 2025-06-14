@@ -62,6 +62,7 @@ p {
   flex-direction: column;
   align-items: center;
   width: 22%;
+  max-width: 100%;
   margin-bottom: 20px;
   overflow: visible;
   /* Permite que la imagen agrandada se muestre sin recortes */
@@ -264,7 +265,7 @@ p {
 
 @media (max-width: 1024px) {
   .fotos-previsualizar {
-    width: 30%;
+    width: 48%;
   }
 }
 
@@ -291,13 +292,7 @@ p {
 /* Teléfonos grandes (≥576px y ≤767px) */
 @media (max-width: 767px) {
   .fotos-previsualizar {
-    width: 48%;
-  }
-}
-
-/* Teléfonos pequeños (≤575px) */
-@media (max-width: 575px) {
-  .fotos-previsualizar {
     width: 100%;
   }
 }
+
