@@ -143,7 +143,12 @@
                             </p>
 
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pre-visualizar">
         <h1 class="tematica">EL LEGADO DEL ARTE URBANO</h1>
@@ -203,7 +208,12 @@
             </div>
 
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
 
     <section class="pintura" id="santin">
@@ -221,7 +231,12 @@
                 <a href="https://cadenaser.com/castillayleon/2025/01/10/una-obra-urbana-pintada-en-guardo-opta-a-ser-el-mejor-mural-del-mundo-en-2024-radio-palencia/" class="btn1">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="escultura" id="rue">
         <div class="arte-container">
@@ -236,7 +251,12 @@
                 <a href="https://www.huffingtonpost.es/virales/los-autores-mural-homenaje-francisco-ibanez-es-enlace-muralismo-street-art-tebeo.html" class="btn2">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="travesia">
         <div class="arte-container">
@@ -252,7 +272,12 @@
                 <a href="https://www.timeout.es/madrid/es/arte/el-mapa-del-arte-urbano-de-madrid" class="btn1">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="escultura" id="dingo">
         <div class="arte-container">
@@ -269,7 +294,12 @@
                 <a href="https://www.traveler.es/viajes-urbanos/galerias/madrid-street-art/1296" class="btn2">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="iwant">
         <div class="arte-container">
@@ -285,7 +315,12 @@
                 <a href="https://cadenaser.com/nacional/2025/05/29/banksy-reaparece-con-una-nueva-obra-en-medio-de-la-calle-y-lanza-un-claro-mensaje-a-la-sociedad-cadena-ser/" class="btn1">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
  <section class="escultura" id="gato">
         <div class="arte-container">
@@ -299,7 +334,12 @@
                 <a href="https://mesto-barcelona.cz/es/debes-ver/Arte/?utm_source=chatgpt.com" class="btn2">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="cara">
         <div class="arte-container">
@@ -313,7 +353,12 @@
                 <a href="https://www.milviatges.com/2021/10-esculturas-en-las-calles-de-barcelona/?utm_source=chatgpt.com" class="btn1">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="escultura" id="gamba">
         <div class="arte-container">
@@ -328,7 +373,12 @@
                 <a href="https://es.wikipedia.org/wiki/La_Gamba_%28escultura%29?utm_source=chatgpt.com" class="btn2">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="somluz">
         <div class="arte-container">
@@ -343,7 +393,12 @@
                 <a href="https://es.wikipedia.org/wiki/Sombras_de_luz?utm_source=chatgpt.com" class="btn1">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
 
     <footer class="bg-ligth">
@@ -355,6 +410,20 @@
         </div>
 
     </footer>
+<script>
+document.querySelectorAll('.obra').forEach(img => {
+    img.addEventListener('click', function () {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.querySelector('.lightbox-img');
+        lightboxImg.src = this.src;
+        lightbox.style.display = 'flex';
+    });
+});
+
+document.querySelector('.close-btn').addEventListener('click', function () {
+    document.getElementById('lightbox').style.display = 'none';
+});
+</script>
 
     <script src="/src/bootsjs/bootstrap.bundle.min.js"></script>
 </body>

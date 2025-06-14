@@ -147,7 +147,12 @@
                 imaginado,
                 entre lo eterno y lo efímero.</p>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pre-visualizar">
         <h1 class="tematica">EL LEGADO DEL ARTE DE LA MITOLOGÍA</h1>
@@ -207,7 +212,12 @@
             </div>
 
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
 
     <section class="pintura" id="rapto_de_europa">
@@ -229,7 +239,12 @@
                 <a href="https://es.wikipedia.org/wiki/El_rapto_de_Europa_(Tiziano)" class="btn1">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="escultura" id="perseo_con_cabeza_de_medusa">
         <div class="arte-container">
@@ -245,7 +260,12 @@
                 <a href="https://es.wikipedia.org/wiki/Perseo_con_la_cabeza_de_Medusa" class="btn2">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="diana_y_acteon">
         <div class="arte-container">
@@ -263,7 +283,12 @@
                 <a href="https://es.wikipedia.org/wiki/Diana_y_Acte%C3%B3n" class="btn1">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="escultura" id="apolo_y_dafne">
         <div class="arte-container">
@@ -281,7 +306,12 @@
                 <a href="https://es.wikipedia.org/wiki/Apolo_y_Dafne_(Bernini)" class="btn2">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="juicio_de_paris">
         <div class="arte-container">
@@ -298,7 +328,12 @@
                 <a href="https://es.wikipedia.org/wiki/El_juicio_de_Paris_(Rubens)" class="btn1">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
  <section class="escultura" id="rapto_de_proserpina">
         <div class="arte-container">
@@ -317,7 +352,12 @@
                 <a href="https://es.wikipedia.org/wiki/El_rapto_de_Proserpina" class="btn2">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="eco_y_narciso">
         <div class="arte-container">
@@ -333,7 +373,12 @@
                 <a href="https://es.wikipedia.org/wiki/Eco_y_Narciso_(William_Waterhouse)" class="btn1">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="escultura" id="hecate">
         <div class="arte-container">
@@ -350,7 +395,12 @@
                 <a href="https://es.wikipedia.org/wiki/H%C3%A9cate" class="btn2">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="hercules_y_la_hidra">
         <div class="arte-container">
@@ -368,7 +418,12 @@
                 <a href="https://es.wikipedia.org/wiki/H%C3%A9rcules_y_la_Hidra" class="btn1">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
 
     <footer class="bg-ligth">
@@ -380,6 +435,20 @@
         </div>
 
     </footer>
+<script>
+document.querySelectorAll('.obra').forEach(img => {
+    img.addEventListener('click', function () {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.querySelector('.lightbox-img');
+        lightboxImg.src = this.src;
+        lightbox.style.display = 'flex';
+    });
+});
+
+document.querySelector('.close-btn').addEventListener('click', function () {
+    document.getElementById('lightbox').style.display = 'none';
+});
+</script>
 
     <script src="/src/bootsjs/bootstrap.bundle.min.js"></script>
 </body>

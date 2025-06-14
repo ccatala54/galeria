@@ -122,14 +122,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#gaseados">Gassed</a>
                     </li>
-                    <!--    
-                        <li>
-                            <p style="color: aliceblue; padding: 0; margin: 0; font-weight: 800; font-size: large;">Anteriores</p>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="/src/html/2025/marzo/guerra-es.html">Marzo2025</a>
-                        </li>-->
+                    
                 </ul>
             </div>
         </div>
@@ -153,7 +146,12 @@
                 beyond the chaos.
                 War, though ever-present, cannot extinguish the dream of a fairer and more peaceful world.</p>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pre-visualizar">
         <h1 class="tematica">THE LEGACY OF THE ART OF WAR</h1>
@@ -213,7 +211,12 @@
             </div>
 
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
 
     <section class="pintura" id="guernica">
@@ -230,7 +233,12 @@
                 <a href="https://en.wikipedia.org/wiki/Guernica_(Picasso)" class="btn1">More information</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="escultura" id="stalingrado">
         <div class="arte-container">
@@ -246,7 +254,12 @@
                 <a href="https://en.wikipedia.org/wiki/The_Motherland_Calls" class="btn2">More information</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="rostro_guerra">
         <div class="arte-container">
@@ -262,7 +275,12 @@
                 <a href="https://en.wikipedia.org/wiki/The_Face_of_War" class="btn1">More information</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="escultura" id="ejercito_rojo">
         <div class="arte-container">
@@ -278,7 +296,12 @@
                 <a href="https://en.wikipedia.org/wiki/Soviet_War_Memorial_(Vienna)" class="btn2">More information</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="masacre">
         <div class="arte-container">
@@ -293,7 +316,12 @@
                 <a href="https://en.wikipedia.org/wiki/The_Massacre_at_Chios" class="btn1">More information</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="escultura" id="miliciano">
         <div class="arte-container">
@@ -308,7 +336,12 @@
                 <a href="https://en.wikipedia.org/wiki/The_Falling_Soldier" class="btn2">More information</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="batalla_waterloo">
         <div class="arte-container">
@@ -329,7 +362,12 @@
                 <a href="https://en.wikipedia.org/wiki/Battle_of_Waterloo" class="btn1">More information</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="escultura" id="madre_hijo_muerto">
         <div class="arte-container">
@@ -347,7 +385,12 @@
                 <a href="https://en.wikipedia.org/wiki/Mother_with_her_Dead_Son" class="btn2">More information</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="gaseados">
         <div class="arte-container">
@@ -364,7 +407,12 @@
                 <a href="https://en.wikipedia.org/wiki/Gassed_(painting)" class="btn1">More information</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
 
     <footer class="bg-ligth">
@@ -376,6 +424,20 @@
         </div>
 
     </footer>
+<script>
+document.querySelectorAll('.obra').forEach(img => {
+    img.addEventListener('click', function () {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.querySelector('.lightbox-img');
+        lightboxImg.src = this.src;
+        lightbox.style.display = 'flex';
+    });
+});
+
+document.querySelector('.close-btn').addEventListener('click', function () {
+    document.getElementById('lightbox').style.display = 'none';
+});
+</script>
 
     <script src="/src/bootsjs/bootstrap.bundle.min.js"></script>
 </body>

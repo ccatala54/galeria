@@ -145,7 +145,12 @@
 
             </p>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pre-visualizar">
         <h1 class="tematica">EL LEGADO DEL ARTE DE LA MUERTE</h1>
@@ -205,7 +210,12 @@
             </div>
 
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
 
     <section class="pintura" id="edades-de-la-muerte">
@@ -222,7 +232,12 @@
                 <a href="https://es.wikipedia.org/wiki/Las_tres_edades_y_la_Muerte" class="btn1">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="escultura" id="angel-haserot">
         <div class="arte-container">
@@ -239,7 +254,12 @@
                 <a href="https://es.wikipedia.org/wiki/%C3%81ngel_Haserot" class="btn2">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="el-juicio-final">
         <div class="arte-container">
@@ -260,7 +280,12 @@
                 <a href="https://es.wikipedia.org/wiki/La_Crucifixi%C3%B3n_y_el_Juicio_Final" class="btn1">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="escultura" id="beso-de-la-muerte">
         <div class="arte-container">
@@ -278,7 +303,12 @@
                 <a href="https://es.wikipedia.org/wiki/El_beso_de_la_muerte_%28escultura%29" class="btn2">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="todos-los-santos">
         <div class="arte-container">
@@ -299,7 +329,12 @@
                     más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="escultura" id="la-muerte-y-el-escultor">
         <div class="arte-container">
@@ -319,7 +354,12 @@
                 <a href="https://es.wikipedia.org/wiki/La_muerte_y_el_escultor" class="btn2">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="la-muerte-de-marat">
         <div class="arte-container">
@@ -339,7 +379,12 @@
                 <a href="https://es.wikipedia.org/wiki/La_muerte_de_Marat" class="btn1">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="escultura" id="unidos-gloria-y-muerte">
         <div class="arte-container">
@@ -355,7 +400,12 @@
                 <a href="https://es.wikipedia.org/wiki/Unidos_en_la_gloria_y_en_la_muerte" class="btn2">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="fragilidad-humana">
         <div class="arte-container">
@@ -375,7 +425,12 @@
                 <a href="https://es.wikipedia.org/wiki/Alegor%C3%ADa_de_la_fragilidad_humana" class="btn1">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
 
     <footer class="bg-ligth">
@@ -387,6 +442,20 @@
         </div>
 
     </footer>
+<script>
+document.querySelectorAll('.obra').forEach(img => {
+    img.addEventListener('click', function () {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.querySelector('.lightbox-img');
+        lightboxImg.src = this.src;
+        lightbox.style.display = 'flex';
+    });
+});
+
+document.querySelector('.close-btn').addEventListener('click', function () {
+    document.getElementById('lightbox').style.display = 'none';
+});
+</script>
 
     <script src="/src/bootsjs/bootstrap.bundle.min.js"></script>
 </body>

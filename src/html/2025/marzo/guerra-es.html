@@ -144,7 +144,12 @@
                 esperanza, un anhelo de paz que persiste más allá del estruendo. La guerra, aunque siempre presente, no
                 puede extinguir el sueño de un mundo más justo y tranquilo.</p>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pre-visualizar">
         <h1 class="tematica">EL LEGADO DEL ARTE DE LA GUERRA</h1>
@@ -204,7 +209,12 @@
             </div>
 
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
 
     <section class="pintura" id="guernica">
@@ -221,7 +231,12 @@
                 <a href="https://es.wikipedia.org/wiki/Guernica_(cuadro)" class="btn1">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="escultura" id="stalingrado">
         <div class="arte-container">
@@ -238,7 +253,12 @@
                     más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="rostro_guerra">
         <div class="arte-container">
@@ -253,7 +273,12 @@
                 <a href="https://en.wikipedia.org/wiki/The_Face_of_War" class="btn1">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="escultura" id="ejercito_rojo">
         <div class="arte-container">
@@ -269,7 +294,12 @@
                     class="btn2">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="masacre">
         <div class="arte-container">
@@ -285,7 +315,12 @@
                     más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="escultura" id="miliciano">
         <div class="arte-container">
@@ -302,7 +337,12 @@
                     más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="batalla_waterloo">
         <div class="arte-container">
@@ -320,7 +360,12 @@
                 <a href="https://es.wikipedia.org/wiki/Batalla_de_Waterloo" class="btn1">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="escultura" id="madre_hijo_muerto">
         <div class="arte-container">
@@ -341,7 +386,12 @@
                     más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="gaseados">
         <div class="arte-container">
@@ -358,7 +408,12 @@
                 <a href="https://es.wikipedia.org/wiki/Gaseados" class="btn1">Saber más</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
 
     <footer class="bg-ligth">
@@ -370,6 +425,20 @@
         </div>
 
     </footer>
+<script>
+document.querySelectorAll('.obra').forEach(img => {
+    img.addEventListener('click', function () {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.querySelector('.lightbox-img');
+        lightboxImg.src = this.src;
+        lightbox.style.display = 'flex';
+    });
+});
+
+document.querySelector('.close-btn').addEventListener('click', function () {
+    document.getElementById('lightbox').style.display = 'none';
+});
+</script>
 
     <script src="/src/bootsjs/bootstrap.bundle.min.js"></script>
 </body>

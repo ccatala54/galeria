@@ -146,7 +146,12 @@
             </p>
 
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pre-visualizar">
         <h1 class="tematica">EL LEGADO DEL ARTE URBANO</h1>
@@ -206,7 +211,12 @@
             </div>
 
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
 
     <section class="pintura" id="santin">
@@ -222,7 +232,12 @@
                 <a href="https://streetartcities.com/markers/f91f826d-2bf4-4d37-b895-404b8a0b4768" class="btn1">More Info</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="escultura" id="rue">
         <div class="arte-container">
@@ -236,7 +251,12 @@
                 <a href="https://streetartcities.com/markers/78317dac-08ed-4a52-851d-f6a87f9f0161" class="btn2">More Info</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="travesia">
         <div class="arte-container">
@@ -251,7 +271,12 @@
                 <a href="https://evendo.com/locations/spain/camino-de-santiago/attraction/mural-travesias-de-digo-diego" class="btn1">More Info</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="escultura" id="dingo">
         <div class="arte-container">
@@ -266,7 +291,12 @@
                 <a href="https://www.isupportstreetart.com/artist/dingoperromundo/" class="btn2">More Info</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="iwant">
         <div class="arte-container">
@@ -281,7 +311,12 @@
                 <a href="https://www.smithsonianmag.com/smart-news/banksy-unveils-new-lighthouse-mural-with-the-words-i-want-to-be-what-you-saw-in-me-in-france-180986719/" class="btn1">More Info</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
  <section class="escultura" id="gato">
         <div class="arte-container">
@@ -295,7 +330,12 @@
                 <a href="https://homagetobcn.com/raval-cat/" class="btn2">More Info</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="cara">
         <div class="arte-container">
@@ -309,7 +349,12 @@
                 <a href="https://worldcitytrail.com/2024/10/29/el-cap-de-barcelona/" class="btn1">More Info</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="escultura" id="gamba">
         <div class="arte-container">
@@ -324,7 +369,12 @@
                 <a href="https://irbarcelona.org/urban-sculptures-statues-barcelona/gambrinus-gamba-prawn-mariscal/" class="btn2">More Info</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="somluz">
         <div class="arte-container">
@@ -339,7 +389,12 @@
                 <a href="https://descubregijon.com/en/monumentos/" class="btn1">More Info</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
 
     <footer class="bg-ligth">
@@ -351,6 +406,20 @@
         </div>
 
     </footer>
+<script>
+document.querySelectorAll('.obra').forEach(img => {
+    img.addEventListener('click', function () {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.querySelector('.lightbox-img');
+        lightboxImg.src = this.src;
+        lightbox.style.display = 'flex';
+    });
+});
+
+document.querySelector('.close-btn').addEventListener('click', function () {
+    document.getElementById('lightbox').style.display = 'none';
+});
+</script>
 
     <script src="/src/bootsjs/bootstrap.bundle.min.js"></script>
 </body>

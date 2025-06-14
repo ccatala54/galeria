@@ -146,7 +146,12 @@
                 but a universal language that reminds us of what unites us. In a world of noise, music is still harmony.
             </p>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pre-visualizar">
         <h1 class="tematica">THE LEGACY OF THE ART OF MUSIC</h1>
@@ -206,7 +211,12 @@
             </div>
 
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
 
     <section class="pintura" id="el_concierto">
@@ -226,7 +236,12 @@
                 <a href="https://en.wikipedia.org/wiki/The_Concert_(Vermeer)" class="btn1">More information</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="escultura" id="monumento_a_sibelius">
         <div class="arte-container">
@@ -243,7 +258,12 @@
                 <a href="https://en.wikipedia.org/wiki/Sibelius_Monument" class="btn2">More information</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="concierto_de_jovenes">
         <div class="arte-container">
@@ -260,7 +280,12 @@
                 <a href="https://en.wikipedia.org/wiki/The_Musicians_(Caravaggio)" class="btn1">More information</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="escultura" id="espiritu_de_la_musica">
         <div class="arte-container">
@@ -279,7 +304,12 @@
                     information</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="la_musica_en_las_tullerias">
         <div class="arte-container">
@@ -298,7 +328,12 @@
                 <a href="https://en.wikipedia.org/wiki/Music_in_the_Tuileries" class="btn1">More information</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="escultura" id="untitled">
         <div class="arte-container">
@@ -318,7 +353,12 @@
                 <a href="https://en.wikipedia.org/wiki/Untitled_%28Jazz_Musicians%29" class="btn2">More information</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="la_musica">
         <div class="arte-container">
@@ -338,7 +378,12 @@
                 <a href="https://en.wikipedia.org/wiki/Music_(Matisse)" class="btn1">More information</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="escultura" id="mozart">
         <div class="arte-container">
@@ -359,7 +404,12 @@
                     information</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
     <section class="pintura" id="el_viejo_guitarrista_ciego">
         <div class="arte-container">
@@ -377,7 +427,12 @@
                 <a href="https://en.wikipedia.org/wiki/The_Old_Guitarist" class="btn1">More information</a>
             </div>
         </div>
-    </section>
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Imagen ampliada">
+    </div>
+
+</section>
 
 
     <footer class="bg-ligth">
@@ -389,6 +444,20 @@
         </div>
 
     </footer>
+<script>
+document.querySelectorAll('.obra').forEach(img => {
+    img.addEventListener('click', function () {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.querySelector('.lightbox-img');
+        lightboxImg.src = this.src;
+        lightbox.style.display = 'flex';
+    });
+});
+
+document.querySelector('.close-btn').addEventListener('click', function () {
+    document.getElementById('lightbox').style.display = 'none';
+});
+</script>
 
     <script src="/src/bootsjs/bootstrap.bundle.min.js"></script>
 </body>
