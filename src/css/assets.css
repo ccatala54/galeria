@@ -1,239 +1,265 @@
 @import url('https://fonts      googleapis.com/css2?family=Kanit:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-li{
-    margin-right: 2%;
-    display: flex;
-    justify-content: flex-end;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  /* o lo que estés usando */
+  overflow-x: hidden;
+  /* IMPORTANTE para prevenir scroll lateral */
+}
+
+li {
+  margin-right: 2%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .introduccion {
-    background: rgba(200, 190, 190, 0.414);
-    border-radius: 10px;
-    padding: 15px;
-    margin: 5%;
-    text-align: center;
-    font-size: 25px;
-    font-family: "Kanit", serif;
-    font-weight: 400;
+  background: rgba(200, 190, 190, 0.414);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 5%;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Kanit", serif;
+  font-weight: 400;
 }
 
-h1, h2, h3 {
-    padding-top: 5%;
+h1,
+h2,
+h3 {
+  padding-top: 5%;
 }
 
 .tematica {
-    font-size: 200%;
-    font-weight: 850;
-    padding-bottom: 5%;
-    text-align: center;
+  font-size: 200%;
+  font-weight: 850;
+  padding-bottom: 5%;
+  text-align: center;
 }
 
 p {
-    text-align: justify;
+  text-align: justify;
 }
 
 .fotos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .fotos-previsualizar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 22%;
-    margin-bottom: 20px;
-    overflow: visible; /* Permite que la imagen agrandada se muestre sin recortes */
-    position: relative; /* Establece un contexto para el posicionamiento */
-  }
-  
-  .fotos-previsualizar img {
-    width: 100%;
-    border-radius: 10px; /* Bordes redondeados */
-    transition: transform 0.3s ease;
-    display: block;
-  }
-  
-  .fotos-previsualizar p {
-    margin-top: 10px;
-    text-align: center;
-    border-left: 3px solid var(--red);
-    padding-left: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    color: azure;
-    transition: opacity 0.3s ease;
-  }
-  
-  .fotos-previsualizar:hover img {
-    transform: scale(1.1); /* Agranda la imagen un 10% */
-  }
-  
-  .fotos-previsualizar:hover p {
-    opacity: 0; /* Oculta el texto al hacer hover */
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22%;
+  margin-bottom: 20px;
+  overflow: visible;
+  /* Permite que la imagen agrandada se muestre sin recortes */
+  position: relative;
+  /* Establece un contexto para el posicionamiento */
+}
+
+.fotos-previsualizar img {
+  width: 100%;
+  border-radius: 10px;
+  /* Bordes redondeados */
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.fotos-previsualizar p {
+  margin-top: 10px;
+  text-align: center;
+  border-left: 3px solid var(--red);
+  padding-left: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: azure;
+  transition: opacity 0.3s ease;
+}
+
+.fotos-previsualizar:hover img {
+  transform: scale(1.1);
+  /* Agranda la imagen un 10% */
+}
+
+.fotos-previsualizar:hover p {
+  opacity: 0;
+  /* Oculta el texto al hacer hover */
+}
+
 
 .pre-visualizar img {
-    border-radius: 10%;
-    width: 100%; 
-    border: 0.1em solid var(--negro);
-    background-image: linear-gradient(to right, var(--red), var(--negro));
-    padding: 0.2em;
-    box-shadow: 0 0 25px #361515;
-}
-.pre-visualizar h1{
-    color: #361515;
+  border-radius: 10%;
+  width: 100%;
+  border: 0.1em solid var(--negro);
+  background-image: linear-gradient(to right, var(--red), var(--negro));
+  padding: 0.2em;
+  box-shadow: 0 0 25px #361515;
 }
 
-.pre-visualizar h1, .arte-container h1 {
-    margin-bottom: 20px;
-    text-align: center;
-    font-family: "Oswald", serif;
-    font-weight: 600;
-    font-size: 40px;
+.pre-visualizar h1 {
+  color: #361515;
+}
+
+.pre-visualizar h1,
+.arte-container h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  font-size: 40px;
 }
 
 
 
-.pre-visualizar a img{
-    transition: 1s opacity;
-    margin: 3%;
-    
+.pre-visualizar a img {
+  transition: 1s opacity;
+  margin: 3%;
+
 }
 
 
 .pintura {
-    background-color: #4b4646;
-    padding: 5%;
-    color: white;
+  background-color: #4b4646;
+  padding: 5%;
+  color: white;
 }
 
 .arte-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 
 
 .imagenes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .obra {
-    width: 100%;
-    max-width: 750px;
-    height: auto;
-    box-shadow: 0 0 25px #e3cdcd;
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  box-shadow: 0 0 25px #e3cdcd;
 }
 
 .descripcion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    font-size: 25px;
-    font-family: "Kanit", serif;
-    font-weight: 400;
-    font-style: italic;
-    width: 100%;
-    max-width: 750px;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  font-size: 25px;
+  font-family: "Kanit", serif;
+  font-weight: 400;
+  font-style: italic;
+  width: 100%;
+  max-width: 750px;
+  padding: 10px;
 }
 
 .arte-container a {
-    display: block;
-    margin-top: 20px;
-    width: 200px;
-    text-align: center;
-    padding: 15px 28px;
-    border-radius: 8px;
-    font-size: 18px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    transition: 0.3s ease;
-    cursor: pointer;
-    border: 2px solid transparent;
-    color: #4b4646;
-    background-color: white;
+  display: block;
+  margin-top: 20px;
+  width: 200px;
+  text-align: center;
+  padding: 15px 28px;
+  border-radius: 8px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+  color: #4b4646;
+  background-color: white;
 }
 
 .btn1:hover {
-    background-color: rgb(217, 199, 199);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: rgb(217, 199, 199);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .escultura {
-    background-color: rgb(217, 199, 199);
-    padding: 5%;
-    color: #4b4646;
+  background-color: rgb(217, 199, 199);
+  padding: 5%;
+  color: #4b4646;
 }
 
 .escultura .obra {
-    box-shadow: 0 0 25px #411313;
+  box-shadow: 0 0 25px #411313;
 }
 
 .btn2:hover {
-    background-color: #4b4646;
-    color: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: #4b4646;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .lightbox {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0; top: 0;
-    width: 100%; height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
 }
 
 .lightbox-img {
-    max-width: 90%;
-    max-height: 90%;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    transition: transform 0.3s;
-    transform: scale(1.05);
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  transition: transform 0.3s;
+  transform: scale(1.05);
 }
 
 .close-btn {
-    position: absolute;
-    top: auto;
-    bottom: 40px;
-    right: 30px;
-    font-size: 40px;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-    z-index: 1001;
+  position: absolute;
+  top: auto;
+  bottom: 40px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 1001;
 }
 
 
 .footer {
-    margin: 5%;
-    padding: 20px 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+  margin: 5%;
+  padding: 20px 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .footer p {
-    margin: 0;
+  margin: 0;
 }
 
 @media (max-width: 1024px) {
