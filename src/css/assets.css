@@ -99,6 +99,11 @@ p {
   /* Oculta el texto al hacer hover */
 }
 
+.pre-visualizar {
+
+            background-color: #757575;
+
+}
 
 .pre-visualizar img {
   border-radius: 10%;
